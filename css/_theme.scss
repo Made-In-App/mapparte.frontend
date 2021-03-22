@@ -4099,6 +4099,317 @@ footer {
 
 /*magazine search page css end*/
 
+/*login popup css start*/
+#login-popup {
+  .modal-dialog {
+    max-width: 35rem;
+  }
+
+  .modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 0;
+
+    .nav {
+      width: 100%;
+
+      .nav-item {
+        padding: 0;
+
+        .nav-link {
+          width: 100%;
+          font-size: 1.3rem;
+          padding: 1.5rem 2rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: #ffffff;
+          background-color: #43707f;
+          border: none;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -0.3rem;
+            left: -100%;
+            width: 100%;
+            height: 0.3rem;
+            background-color: #43707f;
+            opacity: 0;
+            visibility: hidden;
+            transition: all ease-in 0.3s;
+          }
+
+          &.active {
+            &::after {
+              left: 0;
+              opacity: 0.5;
+              visibility: visible;
+              transition: all ease-in 0.3s;
+            }
+          }
+        }
+
+        &:first-child {
+          .nav-link {
+            &::after {
+              right: -100%;
+              left: auto;
+              opacity: 0;
+              visibility: hidden;
+              transition: all ease-in 0.3s;
+            }
+
+            &.active {
+              &::after {
+                right: 0;
+                left: auto;
+                opacity: 0.5;
+                visibility: visible;
+                transition: all ease-in 0.3s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+    padding-top: 1rem;
+
+    .tab-content {
+      .tab-pane {
+        .login-form {
+          width: 75%;
+          margin: auto;
+          padding-bottom: 1rem;
+
+          .form-tile {
+            position: relative;
+
+            .form-label {
+              font-size: 1.3rem;
+              padding: 0.5rem 0;
+            }
+
+            .form-control {
+              font-size: 1.3rem;
+              padding: 0.7rem;
+            }
+
+            .show-password {
+              position: absolute;
+              bottom: 0.65rem;
+              right: 0.5rem;
+              width: 2rem;
+            }
+
+            a {
+              color: #43707f;
+              font-weight: 500;
+              display: block;
+            }
+          }
+
+          .action-btn {
+            .btn {
+              width: 100%;
+              font-size: 1.1rem;
+              text-transform: uppercase;
+              line-height: 1;
+              padding: 1.5rem 0.75rem;
+              border-radius: 0.5rem;
+              background-color: #eb5763;
+              border-color: #eb5763;
+            }
+          }
+        }
+
+        .login-wid-wrapper {
+          background-color: #43707f;
+          padding: 1rem;
+
+          .login-info-ttl {
+            font-size: 1.6rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-align: center;
+            line-height: 1.5;
+            margin: 1rem 0 2rem;
+          }
+
+          .login-wid-tile {
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border: 0.2rem solid #fff;
+              padding: 0.8rem;
+              border-radius: 4rem;
+              width: 75%;
+              margin: 1rem auto;
+              transition: all ease-in 0.3s;
+
+              img {
+                max-height: 2rem;
+                padding-left: 1rem;
+              }
+
+              p {
+                font-size: 1.3rem;
+                color: #ffffff;
+                width: 80%;
+                text-transform: uppercase;
+              }
+            }
+
+            &.facebook {
+              a {
+                &:hover {
+                  background-color: #166fe5;
+                  transition: all ease-in 0.3s;
+                }
+              }
+            }
+
+            &.gplus {
+              a {
+                &:hover {
+                  background-color: #f44336;
+                  transition: all ease-in 0.3s;
+                }
+              }
+            }
+          }
+        }
+
+        .signup-form {
+          .signup-detail {
+            width: 75%;
+            margin: auto;
+            padding-bottom: 1rem;
+          }
+
+          .form-tile {
+            position: relative;
+
+            .form-label {
+              font-size: 1.3rem;
+              padding: 0.5rem 0;
+            }
+
+            &.form-check {
+              display: flex;
+              align-items: flex-start;
+            }
+
+            .form-check-label {
+              font-size: 1.3rem;
+              padding: 1rem 0 0.5rem;
+              color: #ffffff;
+            }
+
+            .form-check-input {
+              margin: 0.5rem;
+              margin-left: -1.5em;
+              width: 2rem;
+              height: 2rem;
+              background-color: transparent;
+              border: 0.15rem solid #fff;
+              border-radius: 0.5rem;
+            }
+
+            .form-control {
+              font-size: 1.3rem;
+              padding: 0.7rem;
+            }
+
+            .show-password {
+              position: absolute;
+              bottom: 0.65rem;
+              right: 0.5rem;
+              width: 2rem;
+            }
+
+            a {
+              color: #fff;
+              text-decoration: underline;
+            }
+          }
+
+          .action-btn {
+            margin: 3rem calc(var(--bs-gutter-x) / -2);
+
+            .btn {
+              width: 100%;
+              font-size: 1.1rem;
+              text-transform: uppercase;
+              line-height: 1;
+              padding: 1.5rem 0.75rem;
+              border-radius: 0.5rem;
+              background-color: #eb5763;
+              border-color: #eb5763;
+            }
+          }
+
+          .form-select,
+          #datepicker,
+          .timepicker {
+            background-image: url("../images/form-arrow.png");
+            background-size: 1.5rem;
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+
+            &::-webkit-calendar-picker-indicator {
+              opacity: 0;
+            }
+          }
+
+          .signup-info-wrapper {
+            background-color: #43707f;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+
+            .signup-info {
+              width: 75%;
+              margin: auto;
+
+              .signup-info-ttl {
+                font-size: 1.6rem;
+                font-weight: 500;
+                text-transform: capitalize;
+                color: #ffffff;
+                text-align: center;
+                line-height: 1.5;
+                margin: 1rem 0 1.5rem;
+              }
+
+              .form-tile {
+                .form-label {
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media576 {
+    .modal-dialog {
+      margin: 3rem auto;
+    }
+  }
+}
+/*login popup css end*/
+
 /*contact page css start*/
 .contact-wrapper {
   .gx-5 {
