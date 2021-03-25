@@ -5251,6 +5251,638 @@ footer .sec-ttl {
 }
 
 /*login popup css end*/
+/*detail logged page css start*/
+.detail-logged-page .breadcum-wrapper {
+  padding: 3rem 0 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .detail-logged-page .banner-wrapper {
+    height: auto;
+  }
+  .detail-logged-page footer {
+    background-color: #ffffff;
+  }
+}
+
+.detail-logged-slider .owl-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.detail-logged-slider .owl-dots .owl-dot span {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+.detail-logged-slider .owl-dots .owl-dot.active span {
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.social-icons li {
+  padding: 0 0.7rem;
+}
+
+.social-icons li a img {
+  max-height: 2.7rem;
+  max-width: 2.7rem;
+  width: 100%;
+}
+
+.detail-wrapper {
+  padding-bottom: 10rem;
+}
+
+.detail-wrapper .detail-ttl {
+  font-size: 4.1rem;
+  line-height: 1.2;
+  margin-top: 1.5rem;
+}
+
+.detail-wrapper .review-wrapper {
+  margin-top: 1.5rem;
+}
+
+.detail-wrapper .review-wrapper .review {
+  max-height: 3.3rem;
+  margin-right: 0.7rem;
+}
+
+.detail-wrapper .review-wrapper .review-count {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #9fb203;
+  line-height: 1;
+  margin-right: 3rem;
+}
+
+.detail-wrapper .review-wrapper .heart {
+  max-height: 3.3rem;
+  margin-right: 1.5rem;
+}
+
+.detail-wrapper .review-wrapper .fvt-btn {
+  color: #b7326b;
+  border: 1px solid #b7326b;
+  padding: 1rem 3.5rem;
+  display: block;
+  font-size: 1.4rem;
+}
+
+.detail-wrapper .activities-wrapper .activities-title {
+  font-size: 3.3rem;
+  margin: 2rem 0;
+}
+
+.detail-wrapper .activities-wrapper .activities-tile {
+  text-align: center;
+  max-width: 20%;
+}
+
+.detail-wrapper .activities-wrapper .activities-tile .activities-img {
+  max-width: 8.9rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  height: 8.9rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.detail-wrapper .activities-wrapper .activities-tile .activities-ttl {
+  font-weight: 500;
+}
+
+.detail-wrapper .activities-wrapper .activities-tile .activities-desc {
+  font-weight: 500;
+  font-size: 1.42rem;
+}
+
+.detail-wrapper .activities-wrapper .activities-tile .divider {
+  margin: 0.7rem;
+}
+
+.detail-wrapper .activities-wrapper .activities-tile:nth-last-child(even) .divider {
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.detail-wrapper .space-wrapper .space-title {
+  font-size: 3.3rem;
+  margin: 2rem 0;
+}
+
+.detail-wrapper .space-wrapper .space-tile {
+  text-align: center;
+}
+
+.detail-wrapper .space-wrapper .space-tile .space-img {
+  margin: auto;
+  margin-bottom: 1rem;
+  height: 8.9rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.detail-wrapper .space-wrapper .space-tile .space-ttl {
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.detail-wrapper .space-wrapper .space-tile .space-ttl sup {
+  font-size: 1.5rem;
+}
+
+.detail-wrapper .space-wrapper .space-tile .space-desc {
+  font-weight: 500;
+  font-size: 1.42rem;
+}
+
+.detail-wrapper .space-wrapper .space-tile .divider {
+  margin: 0.7rem;
+}
+
+.detail-wrapper .space-wrapper .space-tile:nth-last-child(even) .divider {
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.detail-wrapper .space-desc {
+  line-height: 1.2;
+  font-size: 1.5rem;
+}
+
+.detail-wrapper .space-rule-wrapper {
+  margin-bottom: 5rem;
+}
+
+.detail-wrapper .space-rule-wrapper p {
+  line-height: 1.2;
+  font-size: 1.3rem;
+}
+
+.detail-wrapper .space-rule-wrapper h4 {
+  font-size: 3.3rem;
+  margin: 1.5rem 0;
+}
+
+.detail-wrapper .timing-wrapper,
+.detail-wrapper .pricing-wrapper {
+  margin: 2rem 0;
+}
+
+.detail-wrapper .timing-wrapper .timing-header,
+.detail-wrapper .timing-wrapper .pricing-header,
+.detail-wrapper .pricing-wrapper .timing-header,
+.detail-wrapper .pricing-wrapper .pricing-header {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: transparent;
+  border: none;
+}
+
+.detail-wrapper .timing-wrapper .timing-header .divider,
+.detail-wrapper .timing-wrapper .pricing-header .divider,
+.detail-wrapper .pricing-wrapper .timing-header .divider,
+.detail-wrapper .pricing-wrapper .pricing-header .divider {
+  margin: 0.5rem 0;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+.detail-wrapper .timing-wrapper .timing-header .accordion-icon,
+.detail-wrapper .timing-wrapper .pricing-header .accordion-icon,
+.detail-wrapper .pricing-wrapper .timing-header .accordion-icon,
+.detail-wrapper .pricing-wrapper .pricing-header .accordion-icon {
+  max-width: 4.5rem;
+}
+
+.detail-wrapper .timing-wrapper .timing-header .accordion-ttl,
+.detail-wrapper .timing-wrapper .pricing-header .accordion-ttl,
+.detail-wrapper .pricing-wrapper .timing-header .accordion-ttl,
+.detail-wrapper .pricing-wrapper .pricing-header .accordion-ttl {
+  font-size: 3.3rem;
+}
+
+.detail-wrapper .timing-wrapper .timing-header .accordion-ttl .fa-angle-down,
+.detail-wrapper .timing-wrapper .pricing-header .accordion-ttl .fa-angle-down,
+.detail-wrapper .pricing-wrapper .timing-header .accordion-ttl .fa-angle-down,
+.detail-wrapper .pricing-wrapper .pricing-header .accordion-ttl .fa-angle-down {
+  vertical-align: middle;
+  font-size: 2.8rem;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.detail-wrapper .timing-wrapper .timing-body p,
+.detail-wrapper .timing-wrapper .pricing-body p,
+.detail-wrapper .pricing-wrapper .timing-body p,
+.detail-wrapper .pricing-wrapper .pricing-body p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.detail-wrapper .timing-wrapper:first-child .timing-header .divider,
+.detail-wrapper .pricing-wrapper:first-child .timing-header .divider {
+  -webkit-transform: rotate(4.5deg);
+          transform: rotate(4.5deg);
+}
+
+.detail-wrapper .timing-wrapper:nth-child(2),
+.detail-wrapper .pricing-wrapper:nth-child(2) {
+  padding-left: 3rem;
+}
+
+.detail-wrapper .accordion .accordion-item {
+  margin: 2rem 0;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-header .accordion-button {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: transparent;
+  border: none;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-header .accordion-button .divider {
+  margin: 0.5rem 0;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-header .accordion-button .accordion-icon {
+  max-width: 4.5rem;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-header .accordion-button .accordion-ttl {
+  font-size: 3.3rem;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-header .accordion-button .accordion-ttl .fa-angle-down {
+  vertical-align: middle;
+  font-size: 2.8rem;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-header .accordion-button::after {
+  display: none;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-header .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-header .accordion-button.collapsed .accordion-ttl .fa-angle-down {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-collapse {
+  border: none;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 1rem 1.25rem 2.5rem;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-collapse .accordion-body p {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.detail-wrapper .accordion .accordion-item .accordion-collapse.collapsing {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+}
+
+.detail-wrapper .accordion .accordion-item:first-child .accordion-header .accordion-button .divider {
+  -webkit-transform: rotate(4.5deg);
+          transform: rotate(4.5deg);
+}
+
+.detail-wrapper .accordion .accordion-item:nth-child(odd) {
+  border-right: 0.2rem solid #666;
+  padding-right: 2rem;
+}
+
+.detail-wrapper .accordion .accordion-item:nth-child(even) {
+  padding-left: 2rem;
+}
+
+.detail-wrapper .testimonials h4 {
+  font-size: 3.3rem;
+  margin-bottom: 3rem;
+}
+
+.detail-wrapper .testimonials .testimonial-tile {
+  padding: 2rem 1.5rem;
+  background-color: #0000000a;
+  margin: auto;
+}
+
+.detail-wrapper .testimonials .testimonial-tile .testi-user-img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 100%;
+  margin: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.detail-wrapper .testimonials .testimonial-tile .testi-user-surname,
+.detail-wrapper .testimonials .testimonial-tile .testi-user-name {
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.detail-wrapper .testimonials .testimonial-tile .testimonial-desc {
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.detail-wrapper .testimonials .testimonial-tile:nth-child(odd) .divider {
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.detail-wrapper .testimonials .space-btn {
+  margin-top: 4rem;
+}
+
+.detail-wrapper .testimonials .space-btn a p {
+  color: #ffffff;
+}
+
+.detail-wrapper .position-wrapper .position-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.detail-wrapper .position-wrapper .position-header img {
+  max-height: 5.8rem;
+}
+
+.detail-wrapper .position-wrapper .position-header p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-bottom: 0.5rem;
+}
+
+.detail-wrapper .position-wrapper .position-body h4 {
+  font-size: 3.3rem;
+}
+
+.detail-wrapper .position-wrapper .position-body .position-ttl {
+  margin-bottom: 1.3rem;
+}
+
+.detail-wrapper .position-wrapper .position-body .position-img {
+  margin: 2rem 0 3rem;
+}
+
+.detail-wrapper .position-wrapper .position-body p {
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.detail-wrapper .booking-form-wrapper {
+  padding: 3rem;
+  width: 92%;
+  margin-left: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 12rem;
+  background-image: url("../images/booking-form-bg.png");
+  background-position: center bottom;
+  background-size: cover;
+  padding-bottom: 10rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form-ttl {
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form-ttl span {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .form-label {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .form-check {
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .form-check .form-check-label {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .form-check .form-check-input {
+  height: 2rem;
+  width: 2rem;
+  border: 0.2rem solid #000000;
+  font-size: 1.5rem;
+  background-color: transparent;
+  margin: 0;
+  margin-right: 1rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .form-check .form-check-input:checked {
+  background-image: url("../images/check-b.png");
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .form-control {
+  height: 4rem;
+  border: 0.4rem solid #cccccc50;
+  font-size: 1.5rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .form-control#date, .detail-wrapper .booking-form-wrapper .booking-form .form-control.form-select {
+  background-image: url("../images/form-arrow-b.png");
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .form-control#date::-webkit-calendar-picker-indicator, .detail-wrapper .booking-form-wrapper .booking-form .form-control.form-select::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form textarea.form-control {
+  height: 12rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .input-group {
+  font-size: 1.4rem;
+  border: 0.4rem solid #cccccc50;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .input-group label {
+  z-index: 3;
+  opacity: 0.65;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .input-group .form-control {
+  border: none;
+  font-size: 1.4rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .input-group .form-control::-webkit-inner-spin-button,
+.detail-wrapper .booking-form-wrapper .booking-form .input-group .form-control ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .input-group .form-select {
+  padding-top: 0.625rem;
+  font-size: 1.4rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .input-group .button-minus,
+.detail-wrapper .booking-form-wrapper .booking-form .input-group .button-plus {
+  background: no-repeat;
+  border: none;
+  height: calc(3.5rem + 2px);
+  width: calc(3.5rem + 2px);
+  border-left: 0.4rem solid #cccccc50;
+  margin-left: 0 !important;
+  color: #333;
+  font-size: 2.4rem;
+  background: #fff;
+  height: 4rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .action-btn .btn {
+  width: 100%;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: 0.4rem solid #cccccc50;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .action-btn .btn-secondary {
+  background-color: #333;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .action-btn .btn-secondary-outline {
+  border: 0.2rem solid #333;
+  padding: 0.5rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .estimeted-price-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .estimeted-price-wrapper .estimeted-price-ttl {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .estimeted-price-wrapper .estimeted-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .estimeted-price-wrapper .estimeted-price p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.detail-wrapper .booking-form-wrapper .booking-form .estimeted-price-wrapper .estimeted-price h4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@media (min-width: 1921px) {
+  .detail-wrapper .booking-form-wrapper {
+    width: 97%;
+  }
+  .detail-wrapper .booking-form-wrapper .booking-form .form-control#date {
+    padding-right: 0;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .detail-wrapper .activities-wrapper .activities-tile {
+    max-width: 30%;
+  }
+  .detail-wrapper .accordion .accordion-item:nth-child(odd) {
+    border: none;
+  }
+  .detail-wrapper .testimonials {
+    margin: 0 auto 3rem;
+  }
+  .detail-wrapper .testimonials .testimonial-tile {
+    margin: 2rem 0;
+  }
+  .detail-wrapper .booking-form-wrapper {
+    width: 100%;
+    margin: 3rem -1rem 0;
+  }
+}
+
+/*detail logged page css end*/
 /*contact page css start*/
 .contact-wrapper .gx-5 {
   --bs-gutter-x: 15rem;

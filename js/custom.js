@@ -64,6 +64,17 @@ $('.featured-img-slider').owlCarousel({
     items: 1
 })
 
+$('.detail-logged-slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplaySpeed: 1000,
+    items: 1
+})
+
 //magazine detail page banner
 $('.magazine-slider').slick({
     centerMode: true,
