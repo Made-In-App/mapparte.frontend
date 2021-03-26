@@ -67,7 +67,8 @@ $('.featured-img-slider').owlCarousel({
 $('.detail-logged-slider').owlCarousel({
     loop: true,
     margin: 10,
-    nav: false,
+    nav: true,
+    navText: ["<img src='images/slider-arrow.svg'>", "<img src='images/slider-arrow.svg'>"],
     dots: true,
     autoplay: true,
     autoplayTimeout: 3000,
