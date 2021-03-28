@@ -1520,8 +1520,6 @@ header {
 /*numbers section css start*/
 .numbers-wrapper {
   padding: 3rem 0 10rem; }
-  .numbers-wrapper .section-ttl {
-    margin: 1rem 0; }
   .numbers-wrapper .numbers-tile {
     display: flex;
     align-items: flex-end;
