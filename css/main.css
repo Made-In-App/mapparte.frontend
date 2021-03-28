@@ -1650,12 +1650,6 @@ header {
   line-height: 1.5;
   margin: auto;
   margin-bottom: 4rem; }
-.services-wrapper .read-more {
-  display: block;
-  margin-bottom: 3rem; }
-  .services-wrapper .read-more p {
-    padding: 1.5rem 1rem;
-    color: #fff; }
 @media (max-width: 1680px) {
   .services-wrapper .service-tile .service-img {
     max-height: 12rem; } }
@@ -1664,6 +1658,12 @@ header {
     width: 75%; }
   .services-wrapper .service-tile {
     margin-bottom: 3rem; } }
+
+.read-more {
+  display: block; }
+  .read-more p {
+    padding: 1.5rem 1rem;
+    color: #fff; }
 
 /*services section css end*/
 /*newsletter section css start*/
@@ -2918,7 +2918,7 @@ footer {
       .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content h3 {
         font-size: 2rem;
         line-height: 3.2rem;
-        font-weight: bold; }
+        font-weight: 500; }
       .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .magazine-desc {
         font-size: 1.5rem;
         line-height: 1.5;
@@ -2942,7 +2942,7 @@ footer {
           margin-top: 1rem; }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content h3 {
           font-size: 2.5rem;
-          font-weight: bold; }
+          font-weight: 500; }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .magazine-desc {
           font-size: 1.5rem;
           line-height: 1.5;
@@ -3019,7 +3019,7 @@ footer {
       .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile .magazine-content h3 {
         font-size: 2rem;
         line-height: 3.2rem;
-        font-weight: bold; }
+        font-weight: 500; }
       .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile .magazine-content .magazine-ttl {
         font-size: 1.3rem;
         line-height: 1.5;
