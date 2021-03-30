@@ -1462,7 +1462,6 @@ header .header-wrapper .menu nav .navbar-nav .nav-item::-webkit-scrollbar-thumb 
 /*spazi section css end*/
 /*how work section css start*/
 .read-more {
-  margin-top: 3rem;
   display: block;
 }
 .read-more p {
@@ -1488,6 +1487,7 @@ header .header-wrapper .menu nav .navbar-nav .nav-item::-webkit-scrollbar-thumb 
   padding: 3.5rem 3rem;
   background-color: #ffffffb5;
   height: 80%;
+  margin-bottom: 3rem;
 }
 .how-work-wrapper .gx-5 .how-work-tiles .how-work-tile h4 {
   color: #000000;
