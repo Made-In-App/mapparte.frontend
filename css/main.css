@@ -1471,6 +1471,11 @@ header .header-wrapper .menu nav .navbar-nav .nav-item::-webkit-scrollbar-thumb 
   font-size: 2rem;
 }
 
+.page .magazine-detail-desc {
+  padding: 4%;
+  background-color: #FFF;
+}
+
 .how-work-wrapper {
   padding: 10rem 0 1.5rem;
   background-image: url("../images/how-work-bg.png");
