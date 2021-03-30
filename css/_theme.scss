@@ -677,20 +677,19 @@ header {
         }
       }
     }
-
-    .read-more {
-      margin-top: 3rem;
-      display: block;
-
-      p {
-        padding: 1.5rem 1rem;
-        color: #fff;
-        display: inline-block;
-        font-size: 2rem;
-      }
-    }
   }
 
+  .read-more {
+    margin-top: 3rem;
+    display: block;
+
+    p {
+      padding: 1.5rem 1rem;
+      color: #fff;
+      display: inline-block;
+      font-size: 2rem;
+    }
+  }
   @include media1681 {
     .gx-5 {
       --bs-gutter-x: 15rem;

@@ -1512,11 +1512,11 @@ header .header-wrapper .menu nav .navbar-nav .nav-item::-webkit-scrollbar-thumb 
   padding: 0;
   transform: rotate(0);
 }
-.how-work-wrapper .gx-5 .read-more {
+.how-work-wrapper .read-more {
   margin-top: 3rem;
   display: block;
 }
-.how-work-wrapper .gx-5 .read-more p {
+.how-work-wrapper .read-more p {
   padding: 1.5rem 1rem;
   color: #fff;
   display: inline-block;
