@@ -615,6 +615,18 @@ header {
 /*spazi section css end*/
 
 /*how work section css start*/
+.read-more {
+  margin-top: 3rem;
+  display: block;
+
+  p {
+    
+    padding: 1.5rem 1rem;
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+  }
+}
 
 .how-work-wrapper {
   padding: 10rem 0 1.5rem;
@@ -677,19 +689,10 @@ header {
         }
       }
     }
+
+    
   }
 
-  .read-more {
-    margin-top: 3rem;
-    display: block;
-
-    p {
-      padding: 1.5rem 1rem;
-      color: #fff;
-      display: inline-block;
-      font-size: 2rem;
-    }
-  }
   @include media1681 {
     .gx-5 {
       --bs-gutter-x: 15rem;
