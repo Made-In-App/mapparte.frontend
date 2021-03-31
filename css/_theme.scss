@@ -619,7 +619,6 @@ header {
   display: block;
 
   p {
-    
     padding: 1.5rem 1rem;
     color: #fff;
     display: inline-block;
@@ -643,7 +642,7 @@ header {
         padding: 3.5rem 3rem;
         background-color: #ffffffb5;
         height: 80%;
-        margin-bottom:3rem;
+        margin-bottom: 3rem;
 
         h4 {
           color: #000000;
@@ -689,8 +688,6 @@ header {
         }
       }
     }
-
-    
   }
 
   @include media1681 {
@@ -4432,6 +4429,12 @@ footer {
       background-position: center top;
     }
   }
+
+  @include media576 {
+    footer {
+      padding-bottom: 5.5rem;
+    }
+  }
 }
 
 .detail-logged-slider {
@@ -4776,6 +4779,7 @@ footer {
 
             .fa-angle-down {
               vertical-align: middle;
+              transform: rotate(-180deg);
               font-size: 2.8rem;
               transition: all ease-in 0.3s;
             }
@@ -4792,7 +4796,7 @@ footer {
           &.collapsed {
             .accordion-ttl {
               .fa-angle-down {
-                transform: rotate(-180deg);
+                transform: rotate(0deg);
                 transition: all ease-in 0.3s;
               }
             }
