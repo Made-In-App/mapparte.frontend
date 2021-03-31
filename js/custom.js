@@ -187,9 +187,3 @@ $('.input-group').on('click', '.button-plus', function (e) {
 $('.input-group').on('click', '.button-minus', function (e) {
     decrementValue(e);
 });
-
-
-//booking time checked
-$('#exampleCheck1, #exampleCheck2').click(function () {
-    $(".time-slot-wrapper").toggleClass('active');
-});

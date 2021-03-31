@@ -81,10 +81,6 @@
                 <img class="d-block d-md-none" src="images/magazine-detail-mbl.jpg" alt="slider" />
             </div>
         </div>
-        <div class="text-center">
-            <a data-bs-toggle="modal" data-bs-target="#login-popup" href="#" class="gallery-btn">Guarda la gallery
-                completa</a>
-        </div>
     </section>
     <!--banner section end-->
 
@@ -114,13 +110,8 @@
                     <div class="d-flex align-items-center review-wrapper">
                         <img class="review" src="images/star.svg" alt="star">
                         <h5 class="review-count">4.5</h5>
-                        <div class="wishlist-btn">
-                            <input type="checkbox" name="wishlist" id="wishlist">
-                            <label class="fvt-btn" for="wishlist">
-                                <span class="label1">Aggiungi ai preferiti</span>
-                                <span class="label2">rimuovi dai preferiti</span>
-                            </label>
-                        </div>
+                        <img class="heart" src="images/heart-fill.png" alt="heart">
+                        <a class="fvt-btn" href="#">Aggiungi ai preferiti</a>
                     </div>
                     <div class="activities-wrapper">
                         <h3 class="activities-title">Attività</h3>
@@ -574,46 +565,40 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="booking-form-wrapper d-none d-sm-block">
+                    <div class="booking-form-wrapper">
                         <h5 class="booking-form-ttl">A partira da <span>160 € l'ora</span> </h5>
                         <form class="row booking-form">
-                            <div class="mb-3 col-12 px-0">
+                            <div class="mb-4 col-12 px-0">
                                 <label for="pianificando" class="form-label">Cosa stai pianificando?</label>
                                 <input type="text" class="form-control" id="pianificando">
                             </div>
-                            <div class="time-slot-wrapper">
-                                <div class="mb-3 time-slot-tile px-0">
-                                    <label for="date" class="form-label">Data</label>
-                                    <input type="date" class="form-control" id="date">
-                                </div>
-                                <div class="mb-3 time-slot-tile px-0">
-                                    <label for="date" class="form-label">Orario inizio</label>
-                                    <select class="form-control form-select" aria-label="Default select example">
-                                        <option selected>9:00</option>
-                                        <option value="1">9:30</option>
-                                        <option value="2">10:00</option>
-                                        <option value="3">10:30</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3 time-slot-tile d-none px-0">
-                                    <label for="date" class="form-label">Data</label>
-                                    <input type="date" class="form-control" id="date">
-                                </div>
-                                <div class="mb-3 time-slot-tile px-0">
-                                    <label for="date" class="form-label">Orario fine</label>
-                                    <select class="form-control form-select" aria-label="Default select example">
-                                        <option selected>21:00</option>
-                                        <option value="1">21:30</option>
-                                        <option value="2">22:00</option>
-                                        <option value="3">22:30</option>
-                                    </select>
-                                </div>
+                            <div class="mb-4 col-4 px-0">
+                                <label for="date" class="form-label">Data</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                            <div class="mb-4 col-4 px-0">
+                                <label for="date" class="form-label">Orario inizio</label>
+                                <select class="form-control form-select" aria-label="Default select example">
+                                    <option selected>9:00</option>
+                                    <option value="1">9:30</option>
+                                    <option value="2">10:00</option>
+                                    <option value="3">10:30</option>
+                                </select>
+                            </div>
+                            <div class="mb-4 col-4 px-0">
+                                <label for="date" class="form-label">Orario fine</label>
+                                <select class="form-control form-select" aria-label="Default select example">
+                                    <option selected>21:00</option>
+                                    <option value="1">21:30</option>
+                                    <option value="2">22:00</option>
+                                    <option value="3">22:30</option>
+                                </select>
                             </div>
                             <div class="col-12 pe-0 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">più giorni</label>
                             </div>
-                            <div class="col-sm-8 mb-3 px-0">
+                            <div class="col-sm-8 mb-4 px-0">
                                 <label for="floatingInput" class="form-label">Numero ospiti</label>
                                 <div class="input-group">
                                     <input type="number" name="quantity" max="" class="form-control" id="floatingInput"
@@ -622,7 +607,7 @@
                                     <input type="button" value="-" class="button-minus" data-field="quantity">
                                 </div>
                             </div>
-                            <div class="mb-3 col-12 px-0">
+                            <div class="mb-4 col-12 px-0">
                                 <label for="coupon" class="form-label">Possiedi un coupon?</label>
                                 <input type="text" class="form-control" id="coupon">
                             </div>
@@ -633,110 +618,16 @@
                                     <h4>1920,00 €</h4>
                                 </div>
                             </div>
-                            <div class="mb-3 col-12 px-0">
+                            <div class="mb-4 col-12 px-0">
                                 <label for="message" class="form-label">invia un messaggio all'host</label>
                                 <textarea class="form-control" name="message" id="message"></textarea>
                             </div>
-                            <div class="mb-3 col-12 px-0 action-btn">
+                            <div class="mb-4 col-12 px-0 action-btn">
                                 <button type="button" class="btn btn-secondary">invia richiesta prenotazione</button>
                                 <button type="button" data-bs-toggle="modal" data-bs-target="#message-popup"
                                     class="btn btn-secondary-outline">Contatta L'host</button>
                             </div>
                         </form>
-                    </div>
-                    <!--form modal start-->
-                    <div class="modal fade" id="form-popup" tabindex="-1" aria-labelledby="form-popupLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="booking-form-wrapper">
-                                    <h5 class="booking-form-ttl">A partira da <span>160 € l'ora</span> </h5>
-                                    <form class="row booking-form">
-                                        <div class="mb-3 col-12 px-0">
-                                            <label for="pianificando" class="form-label">Cosa stai pianificando?</label>
-                                            <input type="text" class="form-control" id="pianificando">
-                                        </div>
-                                        <div class="time-slot-wrapper">
-                                            <div class="mb-3 time-slot-tile px-0">
-                                                <label for="date" class="form-label">Data</label>
-                                                <input type="date" class="form-control" id="date">
-                                            </div>
-                                            <div class="mb-3 time-slot-tile px-0">
-                                                <label for="date" class="form-label">Orario inizio</label>
-                                                <select class="form-control form-select"
-                                                    aria-label="Default select example">
-                                                    <option selected>9:00</option>
-                                                    <option value="1">9:30</option>
-                                                    <option value="2">10:00</option>
-                                                    <option value="3">10:30</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3 time-slot-tile d-none px-0">
-                                                <label for="date" class="form-label">Data</label>
-                                                <input type="date" class="form-control" id="date">
-                                            </div>
-                                            <div class="mb-3 time-slot-tile px-0">
-                                                <label for="date" class="form-label">Orario fine</label>
-                                                <select class="form-control form-select"
-                                                    aria-label="Default select example">
-                                                    <option selected>21:00</option>
-                                                    <option value="1">21:30</option>
-                                                    <option value="2">22:00</option>
-                                                    <option value="3">22:30</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 pe-0 form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                                            <label class="form-check-label" for="exampleCheck2">più giorni</label>
-                                        </div>
-                                        <div class="col-8 mb-3 px-0">
-                                            <label for="floatingInput" class="form-label">Numero ospiti</label>
-                                            <div class="input-group">
-                                                <input type="number" name="quantity" max="" class="form-control"
-                                                    id="floatingInput" placeholder="30">
-                                                <input type="button" value="+" class="button-plus"
-                                                    data-field="quantity">
-                                                <input type="button" value="-" class="button-minus"
-                                                    data-field="quantity">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 col-12 px-0">
-                                            <label for="coupon" class="form-label">Possiedi un coupon?</label>
-                                            <input type="text" class="form-control" id="coupon">
-                                        </div>
-                                        <div class="col-12 px-0 estimeted-price-wrapper">
-                                            <h4 class="estimeted-price-ttl">Prezzo stimato</h4>
-                                            <div class="estimeted-price">
-                                                <p>160 € X 12 ore</p>
-                                                <h4>1920,00 €</h4>
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 col-12 px-0">
-                                            <label for="message" class="form-label">invia un messaggio all'host</label>
-                                            <textarea class="form-control" name="message" id="message"></textarea>
-                                        </div>
-                                        <div class="mb-3 col-12 px-0 action-btn">
-                                            <button type="button" class="btn btn-secondary">invia richiesta
-                                                prenotazione</button>
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#message-popup"
-                                                class="btn btn-secondary-outline">Contatta L'host</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <!-- <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--form modal end-->
-                    <div class="row mx-0 d-sm-none mbl-action-btn">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#form-popup"
-                            class="btn btn-secondary col-6">invia richiesta prenotazione</button>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#message-popup"
-                            class="btn btn-secondary-outline col-6">Contatta L'host</button>
                     </div>
                 </div>
             </div>
@@ -790,7 +681,6 @@
         </div>
     </footer>
     <!--footer section end-->
-
     <!--message modal start-->
     <div class="modal fade" id="message-popup" tabindex="-1" aria-labelledby="message-popupLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -843,138 +733,6 @@
         </div>
     </div>
     <!--message modal end-->
-    <!--login modal start-->
-    <div class="modal fade" id="login-popup" tabindex="-1" aria-labelledby="login-popupLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                    <ul class="nav row" id="myTab" role="tablist">
-                        <li class="nav-item col-6" role="presentation">
-                            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                                type="button" role="tab" aria-controls="home" aria-selected="true">sign up</button>
-                        </li>
-                        <li class="nav-item col-6" role="presentation">
-                            <button class="nav-link active" id="profile-tab" data-bs-toggle="tab"
-                                data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
-                                aria-selected="false">login</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-body">
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <form class="signup-form">
-                                <div class="signup-detail">
-                                    <div class="mb-3 form-tile">
-                                        <label for="name" class="form-label">Nome e Cognome</label>
-                                        <input type="text" class="form-control" id="name">
-                                    </div>
-                                    <div class="mb-3 form-tile">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email">
-                                    </div>
-                                    <div class="mb-3 form-tile">
-                                        <label for="Password" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="Password">
-                                        <img class="show-password" src="images/eye.svg" alt="eye">
-                                    </div>
-                                </div>
-                                <div class="signup-info-wrapper">
-                                    <div class="signup-info">
-                                        <h5 class="signup-info-ttl">altre informazioni</h5>
-                                        <div class="mb-3 form-tile">
-                                            <label for="datepicker" class="form-label">Date Of Birth</label>
-                                            <input class="form-control" type="date" id="datepicker">
-                                        </div>
-                                        <div class="mb-3 form-tile">
-                                            <label for="residence" class="form-label">Residenza</label>
-                                            <input type="text" class="form-control" id="residence">
-                                        </div>
-                                        <div class="mb-3 form-tile">
-                                            <label for="activity" class="form-label">Attività prevalentemente
-                                                svolta</label>
-                                            <select class="form-select form-control" name="activity" id="activity">
-                                                <option value="music">Music</option>
-                                                <option value="music">Teatro</option>
-                                                <option value="music">Music</option>
-                                                <option value="music">Teatro</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3 mt-4 form-tile form-check">
-                                            <input type="checkbox" class="form-check-input" id="terms">
-                                            <label class="form-check-label" for="terms">Accetta <a href="#">Termini
-                                                    d'Uso</a> e
-                                                <a href="#">Privacy</a></label>
-                                        </div>
-                                        <div class="mb-3 form-tile form-check">
-                                            <input type="checkbox" class="form-check-input" id="update">
-                                            <label class="form-check-label" for="update">Desidero ricevere email di
-                                                aggiornamento</label>
-                                        </div>
-                                        <div class="row action-btn">
-                                            <div class="col-6">
-                                                <button type="button" class="btn btn-secondary">Annulla</button>
-                                            </div>
-                                            <div class="col-6">
-                                                <button type="button" class="btn btn-secondary">Crea un account</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade show active" id="profile" role="tabpanel"
-                            aria-labelledby="profile-tab">
-                            <form class="login-form">
-                                <div class="mb-3 form-tile">
-                                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-3 form-tile">
-                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                    <img class="show-password" src="images/eye.svg" alt="eye">
-                                </div>
-                                <div class="mb-3 form-tile text-center">
-                                    <a href="#" class="form-label">Password dimenticata?</a>
-                                </div>
-                                <div class="row action-btn">
-                                    <div class="col-6">
-                                        <button type="button" class="btn btn-secondary">Annulla</button>
-                                    </div>
-                                    <div class="col-6">
-                                        <button type="button" class="btn btn-secondary">Login</button>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="login-wid-wrapper">
-                                <h5 class="login-info-ttl">Oppure</h5>
-                                <div class="login-wid-tile facebook">
-                                    <a href="#">
-                                        <img src="images/facebook-transprent.svg" alt="facebook">
-                                        <p>accedi con facebook</p>
-                                    </a>
-                                </div>
-                                <div class="login-wid-tile gplus">
-                                    <a href="#">
-                                        <img src="images/google-plus.svg" alt="google-plus">
-                                        <p>accedi con google</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!--login modal end-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
