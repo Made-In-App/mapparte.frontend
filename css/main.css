@@ -1279,6 +1279,65 @@ header .header-wrapper .menu nav .navbar-nav .nav-item::-webkit-scrollbar-thumb 
   border-radius: 10px;
 }
 
+header .header-wrapper .menu nav .navbar-nav .nav-item.logged .fa-user-circle {
+  font-size: 2.5rem;
+}
+
+header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 0;
+  border: 0.3rem solid #66666650;
+  width: 30rem;
+  -webkit-transition: ease-in all 0.3s;
+  transition: ease-in all 0.3s;
+}
+
+header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup .user-detail-list .user-detail-item {
+  padding: 1rem;
+  border: 0.2rem solid #c3c3c350;
+}
+
+header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup .user-detail-list .user-detail-item .fa-user-circle {
+  font-size: 4rem;
+  margin-right: 1rem;
+  color: #006fb7;
+}
+
+header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup .user-detail-list .user-detail-item a {
+  text-align: left;
+  line-height: 1.3;
+  font-size: 1.7rem;
+  color: #006fb7;
+  display: block;
+}
+
+header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup .user-detail-list .user-detail-item a .notify {
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #006fb7;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup .user-detail-list .user-detail-item .user-name {
+  text-align: left;
+  line-height: 1.3;
+  font-size: 1.7rem;
+}
+
+header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup .user-detail-list .user-detail-item .user-name a {
+  color: #e94250;
+}
+
+header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: ease-in all 0.3s;
+  transition: ease-in all 0.3s;
+}
+
 @media (max-width: 1230px) {
   header .header-wrapper .menu nav .navbar-nav .nav-item {
     padding: 1rem;
@@ -1322,6 +1381,12 @@ header .header-wrapper .menu nav .navbar-nav .nav-item::-webkit-scrollbar-thumb 
   }
   header .header-wrapper .menu nav .navbar-nav .nav-item .nav-link {
     font-size: 2rem;
+  }
+  header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    display: none;
   }
 }
 
@@ -6342,6 +6407,271 @@ footer .sec-ttl {
 }
 
 /*message popup css end*/
+/*profile page css start*/
+.profile-page .new-booking-wrapper .booking-details-section .header-top .header-left p {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1;
+}
+
+.profile-detail-wrapper .profile-details-section {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.profile-detail-wrapper .profile-details-section .header-top {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+  margin: 0 -1.9rem;
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+  padding-top: 16rem;
+  background-color: #fff;
+}
+
+.profile-detail-wrapper .profile-details-section .header-top .header-left p {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1;
+}
+
+.profile-detail-wrapper .profile-details-section .profile-img {
+  display: inline-block;
+  position: relative;
+}
+
+.profile-detail-wrapper .profile-details-section .profile-img .fa-user-circle {
+  font-size: 20rem;
+}
+
+.profile-detail-wrapper .profile-details-section .profile-img .fa-pen {
+  font-size: 4rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 1rem;
+  border: 0.2rem solid #000;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.profile-detail-wrapper .profile-details-section .user-review-wrapper {
+  margin-top: 2.5rem;
+}
+
+.profile-detail-wrapper .profile-details-section .user-review-wrapper li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.75rem 0;
+  width: 100%;
+}
+
+.profile-detail-wrapper .profile-details-section .user-review-wrapper li p {
+  font-size: 1.7rem;
+  width: 70%;
+  text-align: left;
+}
+
+.profile-detail-wrapper .profile-details-section .user-review-wrapper li .date {
+  text-align: right;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #e94250;
+}
+
+.profile-detail-wrapper .profile-details-section .user-review-wrapper li h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #e94250;
+  width: 30%;
+}
+
+.profile-detail-wrapper .profile-details-section .user-review-wrapper li h6 img {
+  max-height: 1.8rem;
+  margin-left: 0.3rem;
+}
+
+.profile-detail-wrapper .profile-details-section .profile-btn {
+  background: none;
+  border: 0.2rem solid #999;
+  border-radius: 0.5rem;
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  display: block;
+  margin-top: 3rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.profile-detail-wrapper .profile-details-section .profile-btn:hover {
+  background-color: #e94250;
+  border-color: #e94250;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.profile-detail-wrapper .profile-details-section .profile-update-form .form-tile {
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+}
+
+.profile-detail-wrapper .profile-details-section .profile-update-form .form-tile .form-label {
+  font-size: 1.4rem;
+}
+
+.profile-detail-wrapper .profile-details-section .profile-update-form .form-tile .form-control {
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+
+.profile-detail-wrapper .profile-details-section .profile-update-form .form-tile textarea.form-control {
+  height: 13rem;
+}
+
+.profile-detail-wrapper .profile-details-section .profile-update-form p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #666;
+  margin-top: 1.5rem;
+}
+
+.profile-detail-wrapper .profile-details-section .corporate-data-ttl {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #666;
+  line-height: 1.5;
+  margin: 5rem 0 3rem 2rem;
+}
+
+.profile-detail-wrapper .profile-details-section .action-btn {
+  margin: 2rem;
+}
+
+.profile-detail-wrapper .profile-details-section .action-btn .btn-secondary,
+.profile-detail-wrapper .profile-details-section .action-btn .btn-primary {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.profile-detail-wrapper .profile-details-section .plans-wrapper {
+  padding: 0 2rem;
+}
+
+.profile-detail-wrapper .profile-details-section .plans-wrapper .plan-tile {
+  margin: 1rem 0;
+}
+
+.profile-detail-wrapper .profile-details-section .plans-wrapper .plan-tile h6 {
+  font-weight: 500;
+  color: #009aff;
+}
+
+.profile-detail-wrapper .profile-details-section .plans-wrapper .plan-tile .active-plan {
+  background-color: #009aff;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.profile-detail-wrapper .profile-details-section .plans-wrapper .plan-tile .active-plan p {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+.profile-detail-wrapper .profile-details-section .plans-wrapper .plan-tile .active-plan span {
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.profile-detail-wrapper .profile-details-section .plans-wrapper .plan-tile .active-plan .fa-chevron-right {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.profile-detail-wrapper .profile-details-section:last-child {
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 767.98px) {
+  .profile-detail-wrapper .profile-details-section {
+    padding-left: calc(var(--bs-gutter-x) / 2);
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-top: 1rem;
+  }
+  .profile-detail-wrapper .profile-details-section .header-top {
+    z-index: 2;
+    padding-top: 1rem;
+    width: Calc(100% -calc(var(--bs-gutter-x)/1));
+    left: calc(var(--bs-gutter-x) / 2);
+    right: calc(var(--bs-gutter-x) / 2);
+    top: 14rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+  }
+  .profile-detail-wrapper .profile-details-section .user-review-wrapper {
+    padding: 0 2rem;
+  }
+  .profile-detail-wrapper .profile-details-section .profile-btn {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .profile-detail-wrapper .profile-details-section .profile-update-form p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile-detail-wrapper .profile-details-section .header-top {
+    top: 22rem;
+  }
+  .profile-detail-wrapper .profile-details-section .plans-wrapper .plan-tile .active-plan p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*profile page css end*/
 /*contact page css start*/
 .contact-wrapper .gx-5 {
   --bs-gutter-x: 15rem;
@@ -6402,6 +6732,51 @@ footer .sec-ttl {
 
 .contact-page footer {
   background-color: transparent;
+}
+
+.contact-page .magazine-detail-wrapper .magazine-detail-ttl {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1;
+}
+
+.contact-page .magazine-detail-wrapper .magazine-detail-desc {
+  padding: 2rem 4rem;
+}
+
+.contact-page .magazine-detail-wrapper .magazine-detail-desc h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.contact-page .magazine-detail-wrapper .magazine-detail-desc p {
+  margin-bottom: 2rem;
+}
+
+.contact-page .magazine-detail-wrapper .magazine-detail-desc .wpcf7-form p {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.contact-page .magazine-detail-wrapper .magazine-detail-desc .wpcf7-form p label .wpcf7-form-control-wrap {
+  padding-top: 0.5rem;
+  display: block;
+}
+
+.contact-page .magazine-detail-wrapper .magazine-detail-desc .wpcf7-form p label .wpcf7-form-control-wrap .wpcf7-form-control {
+  height: 3.5rem;
+  font-size: 1.5rem;
+  border: 1px solid #ced4da;
+}
+
+.contact-page .magazine-detail-wrapper .magazine-detail-desc .wpcf7-form p label .wpcf7-form-control-wrap textarea.wpcf7-form-control {
+  height: auto;
+  line-height: 1.5;
+  padding: 1rem;
 }
 
 /*contact page css end*/

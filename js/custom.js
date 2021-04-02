@@ -193,3 +193,14 @@ $('.input-group').on('click', '.button-minus', function (e) {
 $('#exampleCheck1, #exampleCheck2').click(function () {
     $(".time-slot-wrapper").toggleClass('active');
 });
+
+//manage profile elment
+$('.logged-popup').hide();
+
+$(document).on('click', function (e) {
+    if ($(e.target).closest('.logged').length) {
+        $(".logged-popup").show();
+    } else if (!$(e.target).closest('.logged').length) {
+        $('.logged-popup').hide();
+    }
+});
