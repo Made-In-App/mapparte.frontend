@@ -60,49 +60,40 @@
     </header>
     <!--header section end-->
 
-    <!--breadcum section start-->
-    <section class="breadcum-wrapper">
-        <div class="container-fluid gx-5">
-            <ul class="breadcum-items d-flex align-items-center">
-                <li class="breadcum-item"><a class="breadcum-link" href="index.html">Home</a></li>
-                <li class="breadcum-item">&nbsp;/ Contattaci</li>
-            </ul>
-        </div>
-    </section>
-    <!--breadcum section end-->
-
     <!--contact section start-->
     <section class="contact-wrapper">
-        <div class="container-fluid gx-5">
-            <h1 class="section-ttl">Contattaci</h1>
-            <p class="section-desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
-            <form class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 contact-form">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nome e Cognome*</label>
-                    <input type="text" class="form-control" id="name" placeholder="Scrivi qui...">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">email*</label>
-                    <input type="email" class="form-control" id="email" placeholder="Scrivi qui...">
-                </div>
-                <div class="mb-3">
-                    <label for="number" class="form-label">Recapito telefonico</label>
-                    <input type="tel" class="form-control" id="number" placeholder="Scrivi qui...">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Messaggio</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
-                </div>
-                <div class="mb-3 text-center">
-                    <button type="submit" class="btn btn-primary">INVIA</button>
-                </div>
-            </form>
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <h1 class="section-ttl">Contattaci</h1>
+                <p class="section-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+                <form class="contact-form">
+                    <div class="form-tile">
+                        <input type="text" class="form-control" id="name" placeholder="Nome Cognome">
+                    </div>
+                    <div class="form-tile">
+                        <input type="email" class="form-control" id="email" placeholder="Mail">
+                    </div>
+                    <div class="form-tile">
+                        <input type="tel" class="form-control" id="number" placeholder="tel">
+                    </div>
+                    <div class="form-tile">
+                        <label for="message" class="form-label">Messaggio</label>
+                        <textarea class="form-control" id="message" rows="8"></textarea>
+                    </div>
+                    <div class="action-btn text-center">
+                        <button type="submit" class="btn btn-outline-secondary">INVIA</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     <!--contact section end-->
