@@ -3074,7 +3074,7 @@ footer {
     max-width: 73%; }
     .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile .magazine-content .magazine-desc {
       font-size: 1.6rem; }
-    .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile .magazine-content h6 {
+    .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile .magazine-content h3 {
       line-height: 1; } }
 @media (max-width: 1399.98px) {
   .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile .magazine-img {
@@ -3083,7 +3083,7 @@ footer {
     max-width: 73%; }
     .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile .magazine-content .magazine-desc {
       font-size: 1.6rem; }
-    .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile .magazine-content h6 {
+    .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile .magazine-content h3 {
       line-height: 1; } }
 @media (max-width: 575.98px) {
   .magazine-list-wrapper {
