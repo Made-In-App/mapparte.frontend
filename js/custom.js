@@ -70,7 +70,7 @@ $('.detail-logged-slider').owlCarousel({
     nav: true,
     navText: ["<img src='images/slider-arrow.svg'>", "<img src='images/slider-arrow.svg'>"],
     dots: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     autoplaySpeed: 1000,
     items: 1
