@@ -5694,19 +5694,26 @@ footer {
       display: inline-block;
       position: relative;
 
-      .fa-user-circle {
-        font-size: 20rem;
+      .user-img {
+        width: 19rem;
+        height: 19rem;
+        object-fit: cover;
+        border-radius: 100%;
       }
 
-      .fa-pen {
-        font-size: 4rem;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        padding: 1rem;
-        border: 0.2rem solid #000;
-        border-radius: 100%;
-        background-color: #fff;
+      a {
+        color: #000000;
+
+        .fa-pen {
+          font-size: 4rem;
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+          padding: 1rem;
+          border: 0.2rem solid #000;
+          border-radius: 100%;
+          background-color: #fff;
+        }
       }
     }
 
