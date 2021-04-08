@@ -70,7 +70,7 @@ $('.detail-logged-slider').owlCarousel({
     nav: true,
     navText: ["<img src='images/slider-arrow.svg'>", "<img src='images/slider-arrow.svg'>"],
     dots: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     autoplaySpeed: 1000,
     items: 1
@@ -103,7 +103,7 @@ $('.magazine-slider').slick({
     ]
 });
 
-// // header height 
+// // header height
 // $(window).on('load', function () {
 //     var hheight = $("header").height();
 //     $('.banner-wrapper').css({ 'padding-top': hheight });
@@ -199,7 +199,7 @@ $('.logged-popup').hide();
 
 $(document).on('click', function (e) {
     if ($(e.target).closest('.logged').length) {
-        $(".logged-popup").show();
+        $(".logged-popup").toggle();
     } else if (!$(e.target).closest('.logged').length) {
         $('.logged-popup').hide();
     }
