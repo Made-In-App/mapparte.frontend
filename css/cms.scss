@@ -605,7 +605,6 @@
   max-width: 100%;
 
   .my-space-wrapper {
-
     width: 100%;
     background-color: #4f6675;
     min-height: 100vh;
@@ -652,7 +651,13 @@
     }
 
     .my-space-content-wrapper {
-      min-height: 100vh
+      min-height: 100vh;
+      position: fixed;
+      right: 0;
+
+      @include media991 {
+        display: none;
+      }
     }
 
     .k-state-selecting {
