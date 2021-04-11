@@ -180,6 +180,24 @@ header {
             &:last-child {
               border: none;
 
+              & > a {
+                border-radius: 100%;
+                overflow: hidden;
+                width:34px;
+                height: 34px;
+                padding: 0;
+                position: relative;
+
+                img {
+                  position: absolute;
+                  min-height: 100%;
+                  min-width: 100%;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%,-50%);
+                }
+              }
+
               img {
                 width: 2.5rem;
                 margin: auto;
@@ -374,23 +392,6 @@ header {
 
               &:last-child {
 
-                & > a {
-                  border-radius: 100%;
-                  overflow: hidden;
-                  width:34px;
-                  height: 34px;
-                  padding: 0;
-                  position: relative;
-
-                  img {
-                    position: absolute;
-                    min-height: 100%;
-                    min-width: 100%;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%,-50%);
-                  }
-                }
               }
 
               .nav-link {

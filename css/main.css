@@ -994,6 +994,20 @@ header {
                   transition: ease-in all 0.3s; }
           header .header-wrapper .menu nav .navbar-nav .nav-item:last-child {
             border: none; }
+            header .header-wrapper .menu nav .navbar-nav .nav-item:last-child > a {
+              border-radius: 100%;
+              overflow: hidden;
+              width: 34px;
+              height: 34px;
+              padding: 0;
+              position: relative; }
+              header .header-wrapper .menu nav .navbar-nav .nav-item:last-child > a img {
+                position: absolute;
+                min-height: 100%;
+                min-width: 100%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%); }
             header .header-wrapper .menu nav .navbar-nav .nav-item:last-child img {
               width: 2.5rem;
               margin: auto; }
@@ -1101,20 +1115,6 @@ header {
                 height: 0.3rem; }
         header .header-wrapper .menu nav .navbar-nav .nav-item {
           border: none; }
-          header .header-wrapper .menu nav .navbar-nav .nav-item:last-child > a {
-            border-radius: 100%;
-            overflow: hidden;
-            width: 34px;
-            height: 34px;
-            padding: 0;
-            position: relative; }
-            header .header-wrapper .menu nav .navbar-nav .nav-item:last-child > a img {
-              position: absolute;
-              min-height: 100%;
-              min-width: 100%;
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -50%); }
           header .header-wrapper .menu nav .navbar-nav .nav-item .nav-link {
             font-size: 2rem; }
           header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup {
