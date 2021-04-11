@@ -1035,7 +1035,7 @@ header {
             border-radius: 0.5rem;
             position: absolute;
             right: 0;
-            border: 0.3rem solid #66666650;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
             width: 30rem;
             transition: ease-in all 0.3s; }
             header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup .user-detail-list .user-detail-item {
@@ -1118,8 +1118,6 @@ header {
           header .header-wrapper .menu nav .navbar-nav .nav-item .nav-link {
             font-size: 2rem; }
           header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup {
-            border: none;
-            box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
             right: 50%;
             transform: translateX(50%);
             display: none; } }
