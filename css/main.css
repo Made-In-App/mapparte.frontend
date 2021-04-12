@@ -1030,7 +1030,8 @@ header {
             border-right: 2px solid rgba(38, 38, 38, 0.5);
             border-radius: 10px; }
           header .header-wrapper .menu nav .navbar-nav .nav-item.logged .fa-user-circle {
-            font-size: 2.5rem; }
+            min-height: 100%;
+            min-width: 100%; }
           header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup {
             background-color: #ffffff;
             border-radius: 0.5rem;
@@ -2398,14 +2399,13 @@ footer {
         margin-bottom: 12px; }
     .magazine-wrapper .magazine-tiles .magazine-main-tile {
       position: relative;
-      padding: 0 1.5rem; }
+      padding: 0 0.8em; }
       .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content {
-        margin-top: 1rem;
-        position: absolute;
-        top: 15%;
-        left: 30%;
-        transform: translate(-30%, -15%);
-        width: 50%; }
+        background: #fff;
+        padding: 1.3rem;
+        position: relative;
+        height: 100%;
+        width: 100%; }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .camera-icon {
           max-width: 5rem; }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .magazine-ttl {
@@ -2424,7 +2424,11 @@ footer {
           margin-top: 4rem;
           font-weight: 500; }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .name {
-          margin-top: 2rem; }
+          position: absolute;
+          bottom: 1.3rem; }
+          @media (max-width: 767.98px) {
+            .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .name {
+              position: static; } }
           .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .name img {
             max-width: 5rem;
             display: inline-block;
@@ -2437,9 +2441,7 @@ footer {
   @media (min-width: 1921px) {
     .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .magazine-desc {
       width: 100%;
-      font-size: 1.29rem; }
-    .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content {
-      width: 60%; } }
+      font-size: 1.29rem; } }
   @media (max-width: 1399.98px) {
     .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .magazine-desc {
       width: 100%;

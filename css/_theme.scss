@@ -243,7 +243,9 @@ header {
 
             &.logged {
               .fa-user-circle {
-                font-size: 2.5rem;
+                //font-size: 2.5rem;
+                min-height: 100%;
+                min-width: 100%;
               }
 
               .logged-popup {
@@ -2568,15 +2570,14 @@ footer {
 
     .magazine-main-tile {
       position: relative;
-      padding: 0 1.5rem;
+      padding: 0 0.8em;
 
       .magazine-main-content {
-        margin-top: 1rem;
-        position: absolute;
-        top: 15%;
-        left: 30%;
-        transform: translate(-30%, -15%);
-        width: 50%;
+        background: #fff;
+        padding: 1.3rem;
+        position: relative;
+        height: 100%;
+        width: 100%;
 
         .camera-icon {
           max-width: 5rem;
@@ -2604,7 +2605,12 @@ footer {
         }
 
         .name {
-          margin-top: 2rem;
+          position: absolute;
+          bottom: 1.3rem;
+
+          @include media767 {
+            position: static;
+          }
 
           img {
             max-width: 5rem;
@@ -2638,7 +2644,7 @@ footer {
 
       .magazine-main-tile {
         .magazine-main-content {
-          width: 60%;
+          //width: 60%;
         }
       }
     }
