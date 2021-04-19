@@ -2379,24 +2379,6 @@ footer {
       width: 100%; }
   .magazine-wrapper .magazine-tiles {
     margin-top: 2rem; }
-    .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content {
-      margin-top: 1rem; }
-      .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .camera-icon {
-        max-width: 5rem; }
-      .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .magazine-ttl {
-        font-size: 1.3rem;
-        line-height: 1.5;
-        font-weight: 500;
-        margin-top: 0.3rem; }
-      .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .magazine-desc {
-        font-size: 1.5rem;
-        line-height: 1.5;
-        font-weight: 500; }
-      .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content h3 {
-        font-size: 2.9rem;
-        line-height: 3.5rem;
-        font-weight: 500;
-        margin-bottom: 12px; }
     .magazine-wrapper .magazine-tiles .magazine-main-tile {
       position: relative;
       padding: 0 0.8em; }
@@ -2479,6 +2461,25 @@ footer {
 
 /*magazine section css end*/
 /*magazine list section css start*/
+.magazine-content {
+  margin-top: 1rem; }
+  .magazine-content .camera-icon {
+    max-width: 5rem; }
+  .magazine-content .magazine-ttl {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 0.3rem; }
+  .magazine-content .magazine-desc {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500; }
+  .magazine-content h3 {
+    font-size: 2.9rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 12px; }
+
 .magazine-list-wrapper .magazine-list-tiles {
   margin-top: 2rem; }
   .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile {
