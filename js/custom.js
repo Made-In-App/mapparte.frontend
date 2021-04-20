@@ -1,3 +1,13 @@
+$('.drawer-btn').click(function(){
+  $('.booking-menu-wrapper').toggleClass('active');
+  return false;
+});
+
+$('a.menu-link').click(function(){
+  $('.booking-menu-wrapper').removeClass('active');
+  return false;
+});
+
 //home page banner
 $('.home-slider').owlCarousel({
     loop: true,

@@ -11,6 +11,24 @@
   display: none;
 }
 
+a.drawer-btn {
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #006fb7;
+    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    padding: 9px;
+
+    @include media767 {
+      display: block;
+    }
+}
+
 .booking-wrapper {
 
   .booking-menu-wrapper {
@@ -34,6 +52,7 @@
         transition: ease-in all 0.5s;
         display: flex;
         align-items: center;
+        transition: ease-in all 0.15s;
 
         .count {
           min-width: 3rem;
@@ -48,15 +67,38 @@
           margin-left: 1rem;
         }
       }
+      a.menu-link {
 
-      &:hover,
-      &.active {
-        transition: ease-in all 0.3s;
-
-        .menu-link {
+        &:hover {
           background-color: #009aff;
-          transition: ease-in all 0.5s;
         }
+      }
+
+      &.active {
+        a.menu-link {
+          background-color: #009aff;
+        }
+      }
+
+      ul {
+
+        li {
+
+          a.menu-link {
+            padding-left: 50px;
+          }
+        }
+      }
+    }
+
+    @include media767 {
+      left: -100%;
+      position: fixed;
+      transition: left ease-out 0.2s;
+      z-index: 9;
+
+      &.active {
+        left: 0;
       }
     }
   }

@@ -996,6 +996,7 @@ header {
             border: none; }
             header .header-wrapper .menu nav .navbar-nav .nav-item:last-child > a {
               border-radius: 100%;
+              display: block;
               overflow: hidden;
               width: 34px;
               height: 34px;
@@ -1003,7 +1004,7 @@ header {
               position: relative; }
               header .header-wrapper .menu nav .navbar-nav .nav-item:last-child > a img {
                 position: absolute;
-                min-height: 100%;
+                height: 100%;
                 min-width: 100%;
                 left: 50%;
                 top: 50%;
@@ -1029,7 +1030,8 @@ header {
             border-right: 2px solid rgba(38, 38, 38, 0.5);
             border-radius: 10px; }
           header .header-wrapper .menu nav .navbar-nav .nav-item.logged .fa-user-circle {
-            font-size: 2.5rem; }
+            min-height: 100%;
+            min-width: 100%; }
           header .header-wrapper .menu nav .navbar-nav .nav-item.logged .logged-popup {
             background-color: #ffffff;
             border-radius: 0.5rem;
@@ -2377,29 +2379,15 @@ footer {
       width: 100%; }
   .magazine-wrapper .magazine-tiles {
     margin-top: 2rem; }
-    .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content {
-      margin-top: 1rem; }
-      .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .camera-icon {
-        max-width: 5rem; }
-      .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .magazine-ttl {
-        font-size: 1.3rem;
-        line-height: 1.5;
-        font-weight: 500;
-        margin-top: 0.3rem; }
-      .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .magazine-desc {
-        font-size: 1.5rem;
-        line-height: 1.5;
-        font-weight: 500; }
     .magazine-wrapper .magazine-tiles .magazine-main-tile {
       position: relative;
-      padding: 0 1.5rem; }
+      padding: 0 0.8em; }
       .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content {
-        margin-top: 1rem;
-        position: absolute;
-        top: 15%;
-        left: 30%;
-        transform: translate(-30%, -15%);
-        width: 50%; }
+        background: #fff;
+        padding: 1.3rem;
+        position: relative;
+        height: 100%;
+        width: 100%; }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .camera-icon {
           max-width: 5rem; }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .magazine-ttl {
@@ -2408,15 +2396,21 @@ footer {
           font-weight: 500;
           margin-top: 1rem; }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content h3 {
-          font-size: 2.5rem;
-          font-weight: 500; }
+          font-size: 3.9rem;
+          line-height: 4.5rem;
+          font-weight: 500;
+          margin-bottom: 12px; }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .magazine-desc {
           font-size: 1.5rem;
           line-height: 1.5;
           margin-top: 4rem;
           font-weight: 500; }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .name {
-          margin-top: 2rem; }
+          position: absolute;
+          bottom: 1.3rem; }
+          @media (max-width: 767.98px) {
+            .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .name {
+              position: static; } }
           .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .name img {
             max-width: 5rem;
             display: inline-block;
@@ -2429,9 +2423,7 @@ footer {
   @media (min-width: 1921px) {
     .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .magazine-desc {
       width: 100%;
-      font-size: 1.29rem; }
-    .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content {
-      width: 60%; } }
+      font-size: 1.29rem; } }
   @media (max-width: 1399.98px) {
     .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .magazine-desc {
       width: 100%;
@@ -2469,6 +2461,25 @@ footer {
 
 /*magazine section css end*/
 /*magazine list section css start*/
+.magazine-content {
+  margin-top: 1rem; }
+  .magazine-content .camera-icon {
+    max-width: 5rem; }
+  .magazine-content .magazine-ttl {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 0.3rem; }
+  .magazine-content .magazine-desc {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500; }
+  .magazine-content h3 {
+    font-size: 2.9rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 12px; }
+
 .magazine-list-wrapper .magazine-list-tiles {
   margin-top: 2rem; }
   .magazine-list-wrapper .magazine-list-tiles .magazine-list-tile {
@@ -3959,6 +3970,25 @@ footer {
 /*contact page css end*/
 /** theme */
 /*booking page css start*/
+#wpadminbar {
+  display: none; }
+
+a.drawer-btn {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #006fb7;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 100%;
+  padding: 9px; }
+  @media (max-width: 767.98px) {
+    a.drawer-btn {
+      display: block; } }
+
 .booking-wrapper .booking-menu-wrapper {
   padding: 0;
   padding-top: 16rem;
@@ -3977,7 +4007,8 @@ footer {
       text-transform: capitalize;
       transition: ease-in all 0.5s;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      transition: ease-in all 0.15s; }
       .booking-wrapper .booking-menu-wrapper .menu-item .menu-link .count {
         min-width: 3rem;
         height: 3rem;
@@ -3989,11 +4020,20 @@ footer {
         justify-content: center;
         border-radius: 100%;
         margin-left: 1rem; }
-    .booking-wrapper .booking-menu-wrapper .menu-item:hover, .booking-wrapper .booking-menu-wrapper .menu-item.active {
-      transition: ease-in all 0.3s; }
-      .booking-wrapper .booking-menu-wrapper .menu-item:hover .menu-link, .booking-wrapper .booking-menu-wrapper .menu-item.active .menu-link {
-        background-color: #009aff;
-        transition: ease-in all 0.5s; }
+    .booking-wrapper .booking-menu-wrapper .menu-item a.menu-link:hover {
+      background-color: #009aff; }
+    .booking-wrapper .booking-menu-wrapper .menu-item.active a.menu-link {
+      background-color: #009aff; }
+    .booking-wrapper .booking-menu-wrapper .menu-item ul li a.menu-link {
+      padding-left: 50px; }
+  @media (max-width: 767.98px) {
+    .booking-wrapper .booking-menu-wrapper {
+      left: -100%;
+      position: fixed;
+      transition: left ease-out 0.2s;
+      z-index: 9; }
+      .booking-wrapper .booking-menu-wrapper.active {
+        left: 0; } }
 .booking-wrapper .booking-table-wrapper {
   padding-top: 10rem;
   padding-left: 3rem;
