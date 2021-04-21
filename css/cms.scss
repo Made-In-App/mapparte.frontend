@@ -109,6 +109,10 @@ a.drawer-btn {
     padding-right: 3rem;
     background-color: #f7f7f7;
 
+    @include media767 {
+      padding: 1rem;
+    }
+
     .booking-table-section {
       margin-top: 5rem;
 
@@ -135,6 +139,7 @@ a.drawer-btn {
 
       .booking-table {
         width: 100%;
+        min-width: 800px;
 
         .booking-table-head {
           font-size: 1.5rem;
@@ -760,8 +765,10 @@ a.drawer-btn {
         h6 {
           color: #ffffff;
           margin-bottom: 0.5rem;
-          font-size: 1.4rem;
+          font-size: 1.7rem;
+          line-height: 1.5;
           font-weight: 500;
+          margin-bottom: 0.5rem;          
         }
 
         .form-floating {

@@ -2127,6 +2127,53 @@ footer {
   }
 }
 
+.form-check {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+
+  .form-check-input {
+    margin-top: -3px;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    position: relative;
+    margin-right: 1rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 0.2rem solid #eb5763;
+      height: 100%;
+      width: 100%;
+      border-radius: 0.3rem;
+      background: $white;
+    }
+
+    &:active {
+      filter: brightness(100%);
+    }
+
+    &:checked {
+      &::after {
+        content: "";
+        background: $white;
+        background-image: url("../images/check.png");
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
+
+  .form-check-label {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: #525252;
+  }
+}
+
 .filter-options-wrapper {
   background-color: #ffffff;
   position: absolute;
@@ -2262,51 +2309,6 @@ footer {
       }
 
       .filter-lists {
-        .form-check {
-          display: flex;
-          align-items: center;
-          padding: 1rem 1.5rem;
-
-          .form-check-input {
-            margin-top: 0;
-            width: 2rem;
-            height: 2rem;
-            border: none;
-            position: relative;
-
-            &::after {
-              content: "";
-              position: absolute;
-              top: 0;
-              left: 0;
-              border: 0.2rem solid #eb5763;
-              height: 100%;
-              width: 100%;
-              border-radius: 0.3rem;
-              background: $white;
-            }
-
-            &:active {
-              filter: brightness(100%);
-            }
-
-            &:checked {
-              &::after {
-                content: "";
-                background: $white;
-                background-image: url("../images/check.png");
-                background-position: center;
-                background-size: contain;
-              }
-            }
-          }
-
-          .form-check-label {
-            font-size: 1.5rem;
-            margin-left: 1rem;
-            color: #525252;
-          }
-        }
       }
     }
 
@@ -5218,3 +5220,45 @@ footer {
   }
 }
 /*contact page css end*/
+
+
+// acf inputs
+
+.acf-input {
+
+  input[type="checkbox"] {
+      margin-top: 3re;
+      margin-right: 1rem;
+      width: 2rem;
+      height: 2rem;
+      position: relative;
+      border: 0.2rem solid #009aff;
+      background-color: #fff;
+      -webkit-appearance: none;
+      border-radius: .25em;
+      padding: 0 !important;
+
+      &:checked {
+
+        &:after {
+            content: "";
+            background-image: url("https://demo.mapparte.com/wp-content/themes/mapparte/assets/images/check.png");
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+      }
+  }
+
+  .acf-checkbox-list {
+
+    label {
+      display:flex;
+      align-items: center
+    }
+  }
+}

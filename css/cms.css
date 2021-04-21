@@ -2131,6 +2131,40 @@ footer {
   transition: ease-in all 0.3s;
   opacity: 0.1; }
 
+.form-check {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem; }
+  .form-check .form-check-input {
+    margin-top: -3px;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    position: relative;
+    margin-right: 1rem; }
+    .form-check .form-check-input::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 0.2rem solid #eb5763;
+      height: 100%;
+      width: 100%;
+      border-radius: 0.3rem;
+      background: #ffffff; }
+    .form-check .form-check-input:active {
+      filter: brightness(100%); }
+    .form-check .form-check-input:checked::after {
+      content: "";
+      background: #ffffff;
+      background-image: url("../images/check.png");
+      background-position: center;
+      background-size: contain; }
+  .form-check .form-check-label {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: #525252; }
+
 .filter-options-wrapper {
   background-color: #ffffff;
   position: absolute;
@@ -2220,38 +2254,6 @@ footer {
       line-height: 1.5;
       font-weight: 500;
       margin-bottom: 0.5rem; }
-    .filter-options-wrapper .filter-tiles .filter-tile .filter-lists .form-check {
-      display: flex;
-      align-items: center;
-      padding: 1rem 1.5rem; }
-      .filter-options-wrapper .filter-tiles .filter-tile .filter-lists .form-check .form-check-input {
-        margin-top: 0;
-        width: 2rem;
-        height: 2rem;
-        border: none;
-        position: relative; }
-        .filter-options-wrapper .filter-tiles .filter-tile .filter-lists .form-check .form-check-input::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          border: 0.2rem solid #eb5763;
-          height: 100%;
-          width: 100%;
-          border-radius: 0.3rem;
-          background: #ffffff; }
-        .filter-options-wrapper .filter-tiles .filter-tile .filter-lists .form-check .form-check-input:active {
-          filter: brightness(100%); }
-        .filter-options-wrapper .filter-tiles .filter-tile .filter-lists .form-check .form-check-input:checked::after {
-          content: "";
-          background: #ffffff;
-          background-image: url("../images/check.png");
-          background-position: center;
-          background-size: contain; }
-      .filter-options-wrapper .filter-tiles .filter-tile .filter-lists .form-check .form-check-label {
-        font-size: 1.5rem;
-        margin-left: 1rem;
-        color: #525252; }
     .filter-options-wrapper .filter-tiles .submit-btns {
       margin: 5rem 0; }
       .filter-options-wrapper .filter-tiles .submit-btns .btn {
@@ -3968,6 +3970,31 @@ footer {
         padding: 1rem; }
 
 /*contact page css end*/
+.acf-input input[type="checkbox"] {
+  margin-top: 3re;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  border: 0.2rem solid #009aff;
+  background-color: #fff;
+  -webkit-appearance: none;
+  border-radius: .25em;
+  padding: 0 !important; }
+  .acf-input input[type="checkbox"]:checked:after {
+    content: "";
+    background-image: url("https://demo.mapparte.com/wp-content/themes/mapparte/assets/images/check.png");
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+.acf-input .acf-checkbox-list label {
+  display: flex;
+  align-items: center; }
+
 /** theme */
 /*booking page css start*/
 #wpadminbar {
@@ -4039,6 +4066,9 @@ a.drawer-btn {
   padding-left: 3rem;
   padding-right: 3rem;
   background-color: #f7f7f7; }
+  @media (max-width: 767.98px) {
+    .booking-wrapper .booking-table-wrapper {
+      padding: 1rem; } }
   .booking-wrapper .booking-table-wrapper .booking-table-section {
     margin-top: 5rem; }
     .booking-wrapper .booking-table-wrapper .booking-table-section .booking-header {
@@ -4055,7 +4085,8 @@ a.drawer-btn {
         font-size: 1.4rem;
         color: #4f6675; }
     .booking-wrapper .booking-table-wrapper .booking-table-section .booking-table {
-      width: 100%; }
+      width: 100%;
+      min-width: 800px; }
       .booking-wrapper .booking-table-wrapper .booking-table-section .booking-table .booking-table-head {
         font-size: 1.5rem;
         font-weight: 500;
@@ -4448,8 +4479,10 @@ a.drawer-btn {
         .my-space-page .my-space-wrapper .form-wrapper .dimensioni-wrapper h6 {
           color: #ffffff;
           margin-bottom: 0.5rem;
-          font-size: 1.4rem;
-          font-weight: 500; }
+          font-size: 1.7rem;
+          line-height: 1.5;
+          font-weight: 500;
+          margin-bottom: 0.5rem; }
         .my-space-page .my-space-wrapper .form-wrapper .dimensioni-wrapper .form-floating {
           font-size: 1.4rem;
           background: #fff;
