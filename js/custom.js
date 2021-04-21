@@ -1,15 +1,15 @@
-$('.drawer-btn').click(function(){
-  $('.booking-menu-wrapper').toggleClass('active');
+jQuery('.drawer-btn').click(function(){
+  jQuery('.booking-menu-wrapper').toggleClass('active');
   return false;
 });
 
-$('a.menu-link').click(function(){
-  $('.booking-menu-wrapper').removeClass('active');
+jQuery('a.menu-link').click(function(){
+  jQuery('.booking-menu-wrapper').removeClass('active');
   return false;
 });
 
 //home page banner
-$('.home-slider').owlCarousel({
+jQuery('.home-slider').owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
@@ -20,7 +20,7 @@ $('.home-slider').owlCarousel({
     items: 1
 })
 
-$('.featured-slider').owlCarousel({
+jQuery('.featured-slider').owlCarousel({
     loop: true,
     margin: 15,
     nav: false,
@@ -44,7 +44,7 @@ $('.featured-slider').owlCarousel({
     }
 })
 
-$('.testimonial-tiles').owlCarousel({
+jQuery('.testimonial-tiles').owlCarousel({
     loop: true,
     margin: 15,
     nav: false,
@@ -62,7 +62,7 @@ $('.testimonial-tiles').owlCarousel({
     }
 })
 
-$('.featured-img-slider').owlCarousel({
+jQuery('.featured-img-slider').owlCarousel({
     loop: true,
     margin: 0,
     nav: true,
@@ -74,7 +74,7 @@ $('.featured-img-slider').owlCarousel({
     items: 1
 })
 
-$('.detail-logged-slider').owlCarousel({
+jQuery('.detail-logged-slider').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
@@ -87,7 +87,7 @@ $('.detail-logged-slider').owlCarousel({
 })
 
 //magazine detail page banner
-$('.magazine-slider').slick({
+jQuery('.magazine-slider').slick({
     centerMode: true,
     centerPadding: '20rem',
     slidesToShow: 2,
@@ -114,28 +114,28 @@ $('.magazine-slider').slick({
 });
 
 // // header height
-// $(window).on('load', function () {
-//     var hheight = $("header").height();
-//     $('.banner-wrapper').css({ 'padding-top': hheight });
+// jQuery(window).on('load', function () {
+//     var hheight = jQuery("header").height();
+//     jQuery('.banner-wrapper').css({ 'padding-top': hheight });
 // });
 
 //on scroll add class
-// $(window).scroll(function () {
-//     var scroll = $(window).scrollTop();
+// jQuery(window).scroll(function () {
+//     var scroll = jQuery(window).scrollTop();
 
 //     if (scroll >= 500) {
-//         $(".header-wrapper").addClass("darkHeader");
+//         jQuery(".header-wrapper").addClass("darkHeader");
 //     } else {
-//         $(".header-wrapper").removeClass("darkHeader");
+//         jQuery(".header-wrapper").removeClass("darkHeader");
 //     }
 // });
 
-$(".navbar-toggler").click(function () {
-    $('header').toggleClass("active");
+jQuery(".navbar-toggler").click(function () {
+    jQuery('header').toggleClass("active");
 });
 
 //price range slider
-$("#rangePrimary").ionRangeSlider({
+jQuery("#rangePrimary").ionRangeSlider({
     type: "double",
     grid: false,
     min: 0,
@@ -145,19 +145,19 @@ $("#rangePrimary").ionRangeSlider({
     postfix: " €"
 });
 
-$(window).on('load', function () {
-    $('.more-filter-btn, .more-filter-btn-overly').click(function () {
-        $('.filter-options-wrapper').toggleClass('active');
-        $('.more-filter-btn').toggleClass('active');
+jQuery(window).on('load', function () {
+    jQuery('.more-filter-btn, .more-filter-btn-overly').click(function () {
+        jQuery('.filter-options-wrapper').toggleClass('active');
+        jQuery('.more-filter-btn').toggleClass('active');
     });
 
-    var viewPortWidth = $(window).width();
+    var viewPortWidth = jQuery(window).width();
     if (viewPortWidth > 767) {
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
+        jQuery(window).scroll(function () {
+            var scroll = jQuery(window).scrollTop();
             if (scroll >= 100) {
-                $(".filter-options-wrapper.active").removeClass("active");
-                $(".more-filter-btn.active").removeClass("active");
+                jQuery(".filter-options-wrapper.active").removeClass("active");
+                jQuery(".more-filter-btn.active").removeClass("active");
             }
         });
     };
@@ -166,8 +166,8 @@ $(window).on('load', function () {
 //input type num
 function incrementValue(e) {
     e.preventDefault();
-    var fieldName = $(e.target).data('field');
-    var parent = $(e.target).closest('div');
+    var fieldName = jQuery(e.target).data('field');
+    var parent = jQuery(e.target).closest('div');
     var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
 
     if (!isNaN(currentVal)) {
@@ -179,8 +179,8 @@ function incrementValue(e) {
 
 function decrementValue(e) {
     e.preventDefault();
-    var fieldName = $(e.target).data('field');
-    var parent = $(e.target).closest('div');
+    var fieldName = jQuery(e.target).data('field');
+    var parent = jQuery(e.target).closest('div');
     var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
 
     if (!isNaN(currentVal) && currentVal > 0) {
@@ -190,27 +190,27 @@ function decrementValue(e) {
     }
 }
 
-$('.input-group').on('click', '.button-plus', function (e) {
+jQuery('.input-group').on('click', '.button-plus', function (e) {
     incrementValue(e);
 });
 
-$('.input-group').on('click', '.button-minus', function (e) {
+jQuery('.input-group').on('click', '.button-minus', function (e) {
     decrementValue(e);
 });
 
 
 //booking time checked
-$('#exampleCheck1, #exampleCheck2').click(function () {
-    $(".time-slot-wrapper").toggleClass('active');
+jQuery('#exampleCheck1, #exampleCheck2').click(function () {
+    jQuery(".time-slot-wrapper").toggleClass('active');
 });
 
 //manage profile elment
-$('.logged-popup').hide();
+jQuery('.logged-popup').hide();
 
-$(document).on('click', function (e) {
-    if ($(e.target).closest('.logged').length) {
-        $(".logged-popup").toggle();
-    } else if (!$(e.target).closest('.logged').length) {
-        $('.logged-popup').hide();
+jQuery(document).on('click', function (e) {
+    if (jQuery(e.target).closest('.logged').length) {
+        jQuery(".logged-popup").toggle();
+    } else if (!jQuery(e.target).closest('.logged').length) {
+        jQuery('.logged-popup').hide();
     }
 });
