@@ -3934,94 +3934,6 @@ footer {
     }
   }
 
-  .accordion {
-    .accordion-item {
-      margin: 2rem 0;
-
-      .accordion-header {
-        .accordion-button {
-          flex-wrap: wrap;
-          background: transparent;
-          border: none;
-
-          .divider {
-            margin: 0.5rem 0;
-            transform: rotate(2deg);
-          }
-
-          .accordion-icon {
-            max-width: 4.5rem;
-          }
-
-          .accordion-ttl {
-            font-size: 3.3rem;
-
-            .fa-angle-down {
-              vertical-align: middle;
-              transform: rotate(-180deg);
-              font-size: 2.8rem;
-              transition: all ease-in 0.3s;
-            }
-          }
-
-          &::after {
-            display: none;
-          }
-
-          &:focus {
-            box-shadow: none;
-          }
-
-          &.collapsed {
-            .accordion-ttl {
-              .fa-angle-down {
-                transform: rotate(0deg);
-                transition: all ease-in 0.3s;
-              }
-            }
-          }
-        }
-      }
-
-      .accordion-collapse {
-        border: none;
-
-        .accordion-body {
-          padding: 1rem 1.25rem 2.5rem;
-
-          p {
-            font-size: 1.7rem;
-            font-weight: 500;
-            line-height: 1.2;
-          }
-        }
-
-        &.collapsing {
-          transition: height 0.5s ease;
-        }
-      }
-
-      &:first-child {
-        .accordion-header {
-          .accordion-button {
-            .divider {
-              transform: rotate(4.5deg);
-            }
-          }
-        }
-      }
-
-      &:nth-child(odd) {
-        border-right: 0.2rem solid #666;
-        padding-right: 2rem;
-      }
-
-      &:nth-child(even) {
-        padding-left: 2rem;
-      }
-    }
-  }
-
   .testimonials {
     h4 {
       font-size: 3.3rem;
@@ -4421,26 +4333,6 @@ footer {
       }
     }
 
-    .accordion {
-      .accordion-item {
-        margin: 1rem 0;
-
-        .accordion-header {
-          .accordion-button {
-            .accordion-ttl {
-              font-size: 3.1rem;
-            }
-          }
-        }
-      }
-    }
-
-    .space-rule-wrapper {
-      h4 {
-        font-size: 3.1rem;
-      }
-    }
-
     .activities-wrapper {
       .activities-title {
         font-size: 3.1rem;
@@ -4531,6 +4423,118 @@ footer {
   }
 }
 
+
+.accordion {
+
+  @include media576 {
+
+    .accordion-item {
+      margin: 1rem 0;
+      padding: 0 !important;
+
+      .accordion-header {
+        .accordion-button {
+          .accordion-ttl {
+            font-size: 3.1rem;
+          }
+        }
+      }
+    }
+  }
+
+
+  .space-rule-wrapper {
+    h4 {
+      font-size: 3.1rem;
+    }
+  }
+
+  .accordion-item {
+    margin: 2rem 0;
+
+    .accordion-header {
+      .accordion-button {
+        flex-wrap: wrap;
+        background: transparent;
+        border: none;
+
+        .divider {
+          margin: 0.5rem 0;
+          transform: rotate(2deg);
+        }
+
+        .accordion-icon {
+          max-width: 4.5rem;
+        }
+
+        .accordion-ttl {
+          font-size: 3.3rem;
+
+          .fa-angle-down {
+            vertical-align: middle;
+            transform: rotate(-180deg);
+            font-size: 2.8rem;
+            transition: all ease-in 0.3s;
+          }
+        }
+
+        &::after {
+          display: none;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &.collapsed {
+          .accordion-ttl {
+            .fa-angle-down {
+              transform: rotate(0deg);
+              transition: all ease-in 0.3s;
+            }
+          }
+        }
+      }
+    }
+
+    .accordion-collapse {
+      border: none;
+
+      .accordion-body {
+        padding: 1rem 1.25rem 2.5rem;
+
+        p {
+          font-size: 1.7rem;
+          font-weight: 500;
+          line-height: 1.2;
+        }
+      }
+
+      &.collapsing {
+        transition: height 0.5s ease;
+      }
+    }
+
+    &:first-child {
+      .accordion-header {
+        .accordion-button {
+          .divider {
+            transform: rotate(4.5deg);
+          }
+        }
+      }
+    }
+
+    &:nth-child(odd) {
+      border-right: 0.2rem solid #666;
+      padding-right: 2rem;
+    }
+
+    &:nth-child(even) {
+      padding-left: 2rem;
+    }
+  }
+}
 /*detail logged page css end*/
 
 /*detail not logged page css start*/
@@ -5262,3 +5266,276 @@ footer {
     }
   }
 }
+
+
+
+
+
+
+/*how work page css start*/
+
+.info-wrapper .user-icon img {
+  max-height: 5rem;
+  margin: auto;
+}
+
+.info-wrapper .info-ttl {
+  font-size: 4.4rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: auto;
+  margin-top: 1rem;
+  width: 70%;
+}
+
+.info-wrapper .info-desc {
+  font-size: 1.4rem;
+  text-align: center;
+  width: 54%;
+  margin: auto;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.info-wrapper .divider {
+  width: 25%;
+  margin: 5rem auto;
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
+}
+
+.info-wrapper .how-work-accordian {
+  width: 70%;
+  margin: auto;
+}
+
+.info-wrapper .how-work-accordian .accordion-item {
+  text-align: center;
+  border-right: none;
+}
+
+.info-wrapper .how-work-accordian .accordion-item .accordion-header {
+  width: 70%;
+  margin: auto;
+  display: inline-block;
+}
+
+.info-wrapper .how-work-accordian .accordion-item .accordion-header .accordion-button {
+  background: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: none;
+}
+
+.info-wrapper .how-work-accordian .accordion-item .accordion-header .accordion-button h5 {
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-right: 1rem;
+}
+
+.info-wrapper .how-work-accordian .accordion-item .accordion-header .accordion-button .down-arrow {
+  max-height: 1.5rem;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+}
+
+.info-wrapper .how-work-accordian .accordion-item .accordion-header .accordion-button::after {
+  display: none;
+}
+
+.info-wrapper .how-work-accordian .accordion-item .accordion-header .accordion-button:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.info-wrapper .how-work-accordian .accordion-item .accordion-header .accordion-button.collapsed .down-arrow {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.info-wrapper .how-work-accordian .accordion-item .accordion-collapse {
+  border: none;
+}
+
+.info-wrapper .how-work-accordian .accordion-item .accordion-collapse .accordion-body p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0.5rem auto;
+  line-height: 1.3;
+  font-weight: 500;
+  width: 98%;
+}
+
+@media (max-width: 767.98px) {
+  .info-wrapper .info-bg {
+    width: 100%;
+    height: 15rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .info-wrapper .info-ttl {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .info-wrapper .info-desc {
+    width: 75%;
+  }
+  .info-wrapper .divider {
+    width: 50%;
+    margin: 3rem auto;
+  }
+  .info-wrapper .how-work-accordian {
+    width: 100%;
+  }
+  .info-wrapper .how-work-accordian .accordion-item .accordion-header {
+    width: 100%;
+  }
+  .info-wrapper .how-work-accordian .accordion-item .accordion-header .accordion-button h5 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .info-wrapper .info-desc {
+    width: 90%;
+  }
+}
+
+.contactus-wrapper {
+  background-image: url(../images/contact-sec-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 30rem;
+  padding-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contactus-wrapper h2 {
+  font-size: 4.4rem;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  line-height: 1;
+  margin: auto;
+  margin-top: 1rem;
+  width: 70%;
+}
+
+.contactus-wrapper h2 span {
+  font-size: inherit;
+  color: inherit;
+  font-weight: bold;
+}
+
+.contactus-wrapper h5 {
+  font-size: 2.4rem;
+  line-height: 1;
+  margin-right: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.contactus-wrapper .space-btn {
+  padding: 3rem 0;
+}
+
+@media (max-width: 767.98px) {
+  .contactus-wrapper {
+    min-height: 25rem;
+    padding-top: 10rem;
+  }
+  .contactus-wrapper h2 {
+    font-size: 3rem;
+  }
+}
+
+.how-work-page footer {
+  background-color: #c95258;
+}
+
+/*how work page css end*/
+
+/*how does it work page css start*/
+
+.how-does-it-work .info-desc {
+  font-size: 1.8rem;
+  width: 90%;
+  padding: 1.5rem;
+  font-weight: 400;
+}
+
+.how-does-it-work .divider-lg {
+  padding: 3rem 0rem;
+}
+
+.how-does-it-work .divider-lg-small {
+  padding: 0rem;
+}
+
+.how-does-it-work .how-does-work-details .location-img {
+  width: 4rem;
+  margin: auto;
+}
+
+.how-does-it-work .how-does-work-details .info-ttl {
+  font-weight: 300;
+  font-size: 3.9rem;
+}
+
+.how-does-it-work .how-does-work-details .info-desc {
+  font-size: 1.4rem;
+  width: 75%;
+}
+
+.how-does-it-work .how-does-work-details .space-btn {
+  margin-top: 1rem;
+}
+
+/*how does it work page css end*/
+
+/*faq's page css start*/
+
+.how-does-it-work .faq-details {
+  padding-bottom: 4rem;
+}
+
+.how-does-it-work .faq-details .location-img {
+  width: 6rem;
+  margin: auto;
+}
+
+.how-does-it-work .faq-details .info-ttl {
+  font-weight: 300;
+  font-size: 3.9rem;
+}
+
+.how-does-it-work .faq-details .coupon-img {
+  width: 7rem;
+  padding-top: 5rem;
+}
+
+.how-does-it-work .faq-details .divider {
+  margin: 1.5rem auto 1rem;
+}
+
+.how-does-it-work .faq-details .divider-faq {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+.how-does-it-work .faq-details .information-img {
+  width: 3rem;
+  padding-top: 5rem;
+}
+
+/*faq's page css end*/
