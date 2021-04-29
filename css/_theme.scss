@@ -184,7 +184,7 @@ header {
                 border-radius: 100%;
                 display: block;
                 overflow: hidden;
-                width:34px;
+                width: 34px;
                 height: 34px;
                 padding: 0;
                 position: relative;
@@ -195,7 +195,7 @@ header {
                   min-width: 100%;
                   left: 50%;
                   top: 50%;
-                  transform: translate(-50%,-50%);
+                  transform: translate(-50%, -50%);
                 }
               }
 
@@ -253,14 +253,14 @@ header {
                 border-radius: 0.5rem;
                 position: absolute;
                 right: 0;
-                box-shadow: 0 0 12px rgba(0,0,0,0.2);
+                box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
                 width: 30rem;
                 transition: ease-in all 0.3s;
 
                 .user-detail-list {
                   .user-detail-item {
                     padding: 1rem;
-                    border:  none;
+                    border: none;
 
                     .image-profile-container {
                       border-radius: 100%;
@@ -278,7 +278,7 @@ header {
                         min-width: 100%;
                         left: 50%;
                         top: 50%;
-                        transform: translate(-50%,-50%);
+                        transform: translate(-50%, -50%);
                       }
                     }
 
@@ -287,7 +287,7 @@ header {
 
                       a {
                         text-transform: none;
-                        color: #0d6efd
+                        color: #0d6efd;
                       }
                     }
 
@@ -394,7 +394,6 @@ header {
               border: none;
 
               &:last-child {
-
               }
 
               .nav-link {
@@ -2504,9 +2503,6 @@ footer {
 
 /*filter css end*/
 
-
-
-
 /*magazine page css start*/
 
 /*magazine section css start*/
@@ -2542,7 +2538,6 @@ footer {
     margin-top: 2rem;
 
     .magazine-tile {
-
     }
 
     .magazine-main-tile {
@@ -3832,6 +3827,125 @@ footer {
     .space-tile {
       text-align: center;
 
+      .specs {
+        position: relative;
+
+        span {
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 1;
+          letter-spacing: 0.15rem;
+          position: absolute;
+
+          &:nth-child(2) {
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
+
+          &:nth-child(3) {
+            bottom: 0.1rem;
+            left: 1.6rem;
+          }
+
+          &:nth-child(4) {
+            bottom: 0.1rem;
+            right: 1.6rem;
+          }
+
+          @include media1921 {
+            &:nth-child(3) {
+              left: 0;
+            }
+
+            &:nth-child(4) {
+              right: 0;
+            }
+          }
+
+          @include media1920 {
+            &:nth-child(3) {
+              left: 3.6rem;
+            }
+
+            &:nth-child(4) {
+              right: 3.6rem;
+            }
+          }
+
+          @include media1680 {
+            &:nth-child(3) {
+              left: 1.6rem;
+            }
+
+            &:nth-child(4) {
+              right: 1.6rem;
+            }
+          }
+
+          @include media1024 {
+            &:nth-child(3) {
+              left: 0.6rem;
+            }
+
+            &:nth-child(4) {
+              right: 0.6rem;
+            }
+          }
+
+          @include media991 {
+            &:nth-child(3) {
+              left: 0;
+            }
+
+            &:nth-child(4) {
+              right: 0;
+            }
+          }
+
+          @include media767 {
+            &:nth-child(3) {
+              left: 0.6rem;
+            }
+
+            &:nth-child(4) {
+              right: 0.6rem;
+            }
+          }
+
+          @include media576 {
+            &:nth-child(3) {
+              left: 5.6rem;
+            }
+
+            &:nth-child(4) {
+              right: 5.6rem;
+            }
+          }
+
+          @include media425 {
+            &:nth-child(3) {
+              left: 1.9rem;
+            }
+
+            &:nth-child(4) {
+              right: 1.9rem;
+            }
+          }
+
+          @include media375 {
+            &:nth-child(3) {
+              left: 0.6rem;
+            }
+
+            &:nth-child(4) {
+              right: 0.6rem;
+            }
+          }
+        }
+      }
+
       .space-img {
         margin: auto;
         margin-bottom: 1rem;
@@ -4424,11 +4538,8 @@ footer {
   }
 }
 
-
 .accordion {
-
   @include media576 {
-
     .accordion-item {
       margin: 1rem 0;
       padding: 0 !important;
@@ -4442,7 +4553,6 @@ footer {
       }
     }
   }
-
 
   .space-rule-wrapper {
     h4 {
@@ -5226,52 +5336,43 @@ footer {
 }
 /*contact page css end*/
 
-
 // acf inputs
 
 .acf-input {
-
   input[type="checkbox"] {
-      margin-top: 3re;
-      margin-right: 1rem;
-      width: 2rem;
-      height: 2rem;
-      position: relative;
-      border: 0.2rem solid #009aff;
-      background-color: #fff;
-      -webkit-appearance: none;
-      border-radius: .25em;
-      padding: 0 !important;
+    margin-top: 3re;
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    border: 0.2rem solid #009aff;
+    background-color: #fff;
+    -webkit-appearance: none;
+    border-radius: 0.25em;
+    padding: 0 !important;
 
-      &:checked {
-
-        &:after {
-            content: "";
-            background-image: url("https://demo.mapparte.com/wp-content/themes/mapparte/assets/images/check.png");
-            background-position: center;
-            background-size: contain;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-        }
+    &:checked {
+      &:after {
+        content: "";
+        background-image: url("https://demo.mapparte.com/wp-content/themes/mapparte/assets/images/check.png");
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
       }
+    }
   }
 
   .acf-checkbox-list {
-
     label {
-      display:flex;
-      align-items: center
+      display: flex;
+      align-items: center;
     }
   }
 }
-
-
-
-
-
 
 /*how work page css start*/
 
@@ -5540,3 +5641,164 @@ footer {
 }
 
 /*faq's page css end*/
+
+/*subscription page css start*/
+.subscription-detail-page {
+  .new-booking-wrapper {
+    .booking-details-section {
+      .status-wrapper {
+        &.accepted-status-wrapper {
+          background-color: #009aff;
+
+          li {
+            background-color: transparent;
+            padding: 0.25rem 1rem;
+
+            &:first-child {
+              background-color: transparent;
+              padding: 0.25rem 1rem;
+            }
+
+            &.active {
+              background-color: #0574bd;
+              padding: calc(var(--bs-gutter-x) / 2);
+            }
+
+            .fa-clock {
+              margin-top: 0.25rem;
+            }
+          }
+
+          ul {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.subscription-list-page {
+  .new-booking-wrapper {
+    .booking-details-section {
+      padding-top: 15rem;
+
+      .active-plan-ttl {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #006fb7;
+      }
+
+      .status-wrapper {
+        margin-top: 0;
+        padding: 1rem 0;
+        background-color: #009aff;
+
+        li {
+          &:first-child {
+            background-color: transparent;
+            padding: 0.25rem 1rem;
+            border-right: 1px solid #ffffff75;
+          }
+
+          p {
+            margin-top: 0;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .booking-subttl {
+        font-size: 2rem;
+        text-transform: none;
+        margin-bottom: 3rem;
+      }
+
+      .plan-wrapper-ttl {
+        font-size: 2.2rem;
+        text-transform: none;
+        font-weight: 500;
+        color: #4f6675;
+        line-height: 1.5;
+        margin-bottom: 1.1rem;
+        margin-top: 6rem;
+      }
+
+      .plan-list {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+
+        .plan-wrapper {
+          padding: 2rem;
+          background-color: #65889e;
+          transition: all 0.3s ease-in-out;
+          margin: 1rem;
+
+          .plan-ttl {
+            text-align: center;
+            font-weight: 500;
+            color: #fff;
+          }
+
+          .plan-price {
+            text-align: center;
+            font-weight: 500;
+            color: #fff;
+            font-size: 5rem;
+            line-height: 1;
+            margin-top: 5rem;
+
+            span {
+              vertical-align: text-top;
+              color: inherit;
+              font-size: 2rem;
+              line-height: 2;
+
+              &.points {
+                vertical-align: text-bottom;
+                color: inherit;
+                font-size: 3rem;
+                line-height: 1.5;
+              }
+            }
+          }
+
+          .status-note {
+            color: #fff;
+          }
+
+          &:hover {
+            box-shadow: 0 0 20px 0px #4f6675a6;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+
+      @include media767 {
+        .status-wrapper {
+          margin: 0;
+        }
+
+        .plan-list {
+          justify-content: center;
+        }
+
+        .active-plan-ttl {
+          margin-bottom: 1rem;
+        }
+      }
+
+      @include media576 {
+        .status-wrapper {
+          li {
+            &:first-child {
+              border-right: none;
+              border-bottom: 1px solid #ffffff75;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*subscription page css end*/
