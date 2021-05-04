@@ -2175,10 +2175,23 @@ footer {
   visibility: hidden;
   z-index: 1;
   transition: ease-in all 0.3s; }
-  .filter-options-wrapper .gx-5 {
+  .filter-options-wrapper .form-floating {
+    margin-bottom: 0; }
+  .filter-options-wrapper .container {
     --bs-gutter-x: 5rem;
     z-index: 2;
-    position: relative; }
+    position: relative;
+    overflow-y: auto;
+    max-height: calc(100vh - 280px);
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .filter-options-wrapper .container::-webkit-scrollbar {
+      width: 3px;
+      height: 3px; }
+    .filter-options-wrapper .container::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.1); }
+    .filter-options-wrapper .container::-webkit-scrollbar-thumb {
+      background-color: #eb5763; }
   .filter-options-wrapper .price-wrapper {
     padding: 1rem 0; }
     .filter-options-wrapper .price-wrapper .irs--flat .irs-line {
@@ -2244,10 +2257,7 @@ footer {
       font-weight: 400;
       margin-right: 1rem; }
   .filter-options-wrapper .filter-tiles {
-    margin: 4rem 0 0;
-    max-height: 50vh;
-    overflow-y: auto;
-    overflow-x: hidden; }
+    margin: 4rem 0 0; }
     .filter-options-wrapper .filter-tiles .filter-tile .filter-ttl {
       color: #525252;
       font-size: 1.7rem;
