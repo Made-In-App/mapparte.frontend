@@ -1772,7 +1772,12 @@ header {
     text-align: center;
     width: 85%;
     max-height: 4.5rem;
-    color: inherit; }
+    color: inherit;
+    background: url("/wp-content/themes/mapparte/assets/images/newsletter-btn-bg.svg");
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 1.6rem; }
     .newsletter-wrapper .read-more p {
       padding: 1.5rem 0;
       color: inherit;
@@ -1780,6 +1785,8 @@ header {
       margin-left: 0; }
     .newsletter-wrapper .read-more img {
       max-height: 4.5rem; }
+  .newsletter-wrapper .form-check-label a {
+    color: #fff; }
   @media (min-width: 1921px) {
     .newsletter-wrapper {
       padding: 10rem 0 18rem; } }
@@ -2243,19 +2250,19 @@ footer {
       color: #eb5763;
       text-align: center; }
     .filter-options-wrapper .price-wrapper .form-select {
-      height: 3.5rem;
       font-size: 1.5rem;
       color: #000;
       border-radius: 0;
-      padding: 0.375rem 2.5rem 0.375rem 0.75rem;
-      width: 60%; }
+      border: 0.2rem solid #009aff;
+      line-height: 3rem; }
       .filter-options-wrapper .price-wrapper .form-select:focus {
         box-shadow: none; }
     .filter-options-wrapper .price-wrapper .sort-by-ttl {
       color: #eb5763;
       font-size: 1.5rem;
       font-weight: 400;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      white-space: nowrap; }
   .filter-options-wrapper .filter-tiles {
     margin: 4rem 0 0; }
     .filter-options-wrapper .filter-tiles .filter-tile .filter-ttl {
