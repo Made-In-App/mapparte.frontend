@@ -3054,6 +3054,35 @@ footer {
       max-width: 2.7rem;
       width: 100%; }
 
+.form-floating {
+  font-size: 1.4rem;
+  background: #fff;
+  border: 0.2rem solid #009aff;
+  margin-bottom: 3rem; }
+  .form-floating label {
+    z-index: 3;
+    opacity: 0.65; }
+  .form-floating .form-control {
+    border: none;
+    padding-top: 2.3rem;
+    font-size: 1.4rem; }
+    .form-floating .form-control::-webkit-inner-spin-button,
+    .form-floating .form-control ::-webkit-outer-spin-button {
+      appearance: none; }
+  .form-floating .form-select {
+    padding-top: 0.625rem;
+    font-size: 1.4rem; }
+  .form-floating .button-minus,
+  .form-floating .button-plus {
+    background: no-repeat;
+    border: none;
+    height: calc(3.5rem + 2px);
+    width: calc(3.5rem + 2px);
+    border-left: 0.2rem solid #009aff;
+    margin-left: 0 !important;
+    color: #009aff;
+    font-size: 2.4rem; }
+
 .detail-wrapper {
   padding-bottom: 10rem; }
   .detail-wrapper .detail-ttl {

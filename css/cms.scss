@@ -654,6 +654,7 @@ a.drawer-btn {
 
 /*step form css start*/
 
+
 .my-space-page {
   width: 100%;
   max-width: 100%;
@@ -773,46 +774,6 @@ a.drawer-btn {
           line-height: 1.5;
           font-weight: 500;
           margin-bottom: 0.5rem;
-        }
-
-        .form-floating {
-          font-size: 1.4rem;
-          background: #fff;
-          border: 0.2rem solid #009aff;
-          margin-bottom: 3rem;
-
-          label {
-            z-index: 3;
-            opacity: 0.65;
-          }
-
-          .form-control {
-            border: none;
-            padding-top: 2.3rem;
-            font-size: 1.4rem;
-
-            &::-webkit-inner-spin-button,
-            ::-webkit-outer-spin-button {
-              appearance: none;
-            }
-          }
-
-          .form-select {
-            padding-top: 0.625rem;
-            font-size: 1.4rem;
-          }
-
-          .button-minus,
-          .button-plus {
-            background: no-repeat;
-            border: none;
-            height: calc(3.5rem + 2px);
-            width: calc(3.5rem + 2px);
-            border-left: 0.2rem solid #009aff;
-            margin-left: 0 !important;
-            color: #009aff;
-            font-size: 2.4rem;
-          }
         }
 
         .filter-tile {
