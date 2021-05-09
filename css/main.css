@@ -2167,21 +2167,22 @@ footer {
 .filter-options-wrapper {
   background-color: #ffffff;
   position: absolute;
-  top: auto;
+  top: 100%;
   left: 0;
   width: 100%;
+  height: calc(100vh - 260px);
   opacity: 0;
   visibility: hidden;
   z-index: 1;
   transition: ease-in all 0.3s; }
   .filter-options-wrapper .form-floating {
-    margin-bottom: 0; }
+    margin: 5px 0; }
   .filter-options-wrapper .container {
     --bs-gutter-x: 5rem;
     z-index: 2;
     position: relative;
     overflow-y: auto;
-    max-height: calc(100vh - 280px);
+    height: calc(100% - 2rem);
     margin-top: 1rem;
     margin-bottom: 1rem; }
     .filter-options-wrapper .container::-webkit-scrollbar {
@@ -2290,25 +2291,9 @@ footer {
     .filter-options-wrapper.active .price-wrapper .irs--flat .irs-from,
     .filter-options-wrapper.active .price-wrapper .irs--flat .irs-to {
       visibility: visible !important; }
-  @media screen and (min-width: 1440px) and (max-height: 680px) {
-    .filter-options-wrapper .filter-tiles {
-      overflow-y: auto;
-      max-height: 40vh; } }
-  @media screen and (min-width: 1399px) and (max-height: 680px) {
-    .filter-options-wrapper .filter-tiles {
-      overflow-y: auto;
-      max-height: 35vh; } }
-  @media screen and (min-width: 992px) and (max-height: 680px) {
-    .filter-options-wrapper .filter-tiles {
-      overflow-y: auto;
-      max-height: 38vh; } }
   @media (max-width: 991.98px) {
     .filter-options-wrapper {
       top: 31.5rem; } }
-  @media screen and (min-width: 768px) and (max-height: 680px) {
-    .filter-options-wrapper .filter-tiles {
-      overflow-y: auto;
-      max-height: 38vh; } }
   @media (max-width: 767.98px) {
     .filter-options-wrapper {
       position: fixed;
@@ -2316,12 +2301,9 @@ footer {
       padding-top: 10rem; }
       .filter-options-wrapper .gx-5 {
         --bs-gutter-x: 1rem; }
-      .filter-options-wrapper .filter-tiles {
-        overflow-y: auto;
-        max-height: 61vh; }
       .filter-options-wrapper .more-filter-btn-overly {
         position: absolute;
-        bottom: 15%;
+        bottom: 15px;
         right: 5%;
         z-index: 9;
         transform: translateX(-5%);

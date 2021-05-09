@@ -2177,16 +2177,17 @@ footer {
 .filter-options-wrapper {
   background-color: #ffffff;
   position: absolute;
-  top: auto;
+  top: 100%;
   left: 0;
   width: 100%;
+  height: calc(100vh - 260px);
   opacity: 0;
   visibility: hidden;
   z-index: 1;
   transition: ease-in all 0.3s;
 
   .form-floating {
-    margin-bottom: 0;
+    margin: 5px 0;
   }
 
   .container {
@@ -2194,7 +2195,7 @@ footer {
     z-index: 2;
     position: relative;
     overflow-y: auto;
-    max-height: calc(100vh - 280px);
+    height: calc(100% - 2rem);
     margin-top: 1rem;
     margin-bottom: 1rem;
 
@@ -2378,37 +2379,39 @@ footer {
     }
   }
 
-  @include customminwh(1440, 680) {
-    .filter-tiles {
-      overflow-y: auto;
-      max-height: 40vh;
-    }
-  }
-
-  @include customminwh(1399, 680) {
-    .filter-tiles {
-      overflow-y: auto;
-      max-height: 35vh;
-    }
-  }
-
-  @include customminwh(992, 680) {
-    .filter-tiles {
-      overflow-y: auto;
-      max-height: 38vh;
-    }
-  }
+  // @include customminwh(1440, 680) {
+  //   .filter-tiles {
+  //     overflow-y: auto;
+  //     max-height: 40vh;
+  //   }
+  // }
+  //
+  // @include customminwh(1399, 680) {
+  //   .filter-tiles {
+  //     overflow-y: auto;
+  //     max-height: 35vh;
+  //   }
+  // }
+  //
+  // @include customminwh(992, 680) {
+  //   .filter-tiles {
+  //     overflow-y: auto;
+  //     max-height: 38vh;
+  //   }
+  // }
+  //
+  // @include customminwh(768, 680) {
+  //   .filter-tiles {
+  //     overflow-y: auto;
+  //     max-height: 38vh;
+  //   }
+  // }
 
   @include media991 {
     top: 31.5rem;
   }
 
-  @include customminwh(768, 680) {
-    .filter-tiles {
-      overflow-y: auto;
-      max-height: 38vh;
-    }
-  }
+
 
   @include media767 {
     position: fixed;
@@ -2420,13 +2423,13 @@ footer {
     }
 
     .filter-tiles {
-      overflow-y: auto;
-      max-height: 61vh;
+      // overflow-y: auto;
+      // max-height: 61vh;
     }
 
     .more-filter-btn-overly {
       position: absolute;
-      bottom: 15%;
+      bottom: 15px;
       right: 5%;
       z-index: 9;
       transform: translateX(-5%);
