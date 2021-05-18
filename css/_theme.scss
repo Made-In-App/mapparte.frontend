@@ -4,7 +4,7 @@
 // form
 
 .form-control {
-  min-height: 4.8rem;
+  //min-height: 4.8rem;
   font-size: 1.5rem;
   border: 0.2rem solid #009aff;
 
@@ -1297,7 +1297,7 @@ header {
   .numbers-tile {
     display: flex;
     align-items: flex-end;
-    justify-content: center; 
+    justify-content: center;
     margin-top: 7rem;
 
     .number-img {
@@ -2121,7 +2121,7 @@ footer {
   .featured-wrapper {
     background-image: url("../images/search-page-bg.png");
     padding: 0 0 10rem;
-    margin-top: 26rem;
+    margin-top: 24rem;
   }
 
   footer {
@@ -2420,7 +2420,7 @@ footer {
   //
   // @include customminwh(1399, 680) {
   //   .filter-tiles {
-  //     overflow-y: auto;
+  //     overflow-y: auto; 
   //     max-height: 35vh;
   //   }
   // }
@@ -3809,7 +3809,7 @@ footer {
   }
 
   .form-control {
-    border: none;
+    border: none !important;
     padding-top: 2.3rem;
     font-size: 1.4rem;
 

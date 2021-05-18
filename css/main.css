@@ -870,7 +870,6 @@ button:focus {
 /** common css */
 /*header css start*/
 .form-control {
-  min-height: 4.8rem;
   font-size: 1.5rem;
   border: 0.2rem solid #009aff; }
   .form-control:focus {
@@ -2117,7 +2116,7 @@ footer {
 .search-page .featured-wrapper {
   background-image: url("../images/search-page-bg.png");
   padding: 0 0 10rem;
-  margin-top: 26rem; }
+  margin-top: 24rem; }
 .search-page footer {
   background-color: #b7c544; }
 @media (max-width: 991.98px) {
@@ -3110,7 +3109,7 @@ footer {
     z-index: 3;
     opacity: 0.65; }
   .form-floating .form-control {
-    border: none;
+    border: none !important;
     padding-top: 2.3rem;
     font-size: 1.4rem; }
     .form-floating .form-control::-webkit-inner-spin-button,
