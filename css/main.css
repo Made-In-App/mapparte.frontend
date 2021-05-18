@@ -869,6 +869,13 @@ button:focus {
 
 /** common css */
 /*header css start*/
+.form-control {
+  min-height: 4.8rem;
+  font-size: 1.5rem;
+  border: 0.2rem solid #009aff; }
+  .form-control:focus {
+    box-shadow: none; }
+
 header {
   width: 100%;
   z-index: 9;
@@ -1411,9 +1418,8 @@ header {
 /*featured section css start*/
 .featured-tile {
   margin: 0 0.5rem;
-  margin-top: 2rem;
   height: Calc(100% - 2rem); }
-  .featured-tile.subscribed .featured-img-slider:before {
+  .featured-tile.subscribed .featured-img-slider:before, .featured-tile.subscribed > a:before {
     content: 'sponsorizzata';
     position: absolute;
     top: 10px;
@@ -1574,9 +1580,6 @@ header {
         fill: #d3a400; }
   .featured-wrapper .section-ttl {
     margin: 7rem 0 5rem; }
-  @media (max-width: 1920px) {
-    .featured-wrapper .featured-tile {
-      margin-top: 2rem; } }
   @media (max-width: 991.98px) {
     .featured-wrapper .featured-map {
       margin-right: calc(var(--bs-gutter-x) / -2); }
@@ -1598,13 +1601,11 @@ header {
   @media (min-width: 1921px) {
     .featured-wrapper .gx-5 {
       --bs-gutter-x: 0; }
-      .featured-wrapper .gx-5 .featured-tile {
-        margin-top: 2rem; }
-        .featured-wrapper .gx-5 .featured-tile .featured-content {
-          padding: 2rem; }
-          .featured-wrapper .gx-5 .featured-tile .featured-content .wishlist-btn .wishlist-unfill,
-          .featured-wrapper .gx-5 .featured-tile .featured-content .wishlist-btn .wishlist-fill {
-            margin-top: 0; } }
+      .featured-wrapper .gx-5 .featured-tile .featured-content {
+        padding: 2rem; }
+        .featured-wrapper .gx-5 .featured-tile .featured-content .wishlist-btn .wishlist-unfill,
+        .featured-wrapper .gx-5 .featured-tile .featured-content .wishlist-btn .wishlist-fill {
+          margin-top: 0; } }
   @media (max-width: 375px) {
     .featured-wrapper .gx-5 .space-btn {
       width: 100%; } }
@@ -3921,12 +3922,6 @@ footer {
       display: flex;
       align-items: center;
       transition: all 0.3s ease-in; }
-    .profile-detail-wrapper .profile-details-section .profile-update-form .form-tile .form-control {
-      min-height: 4.8rem;
-      font-size: 1.5rem;
-      border: 0.2rem solid #009aff; }
-      .profile-detail-wrapper .profile-details-section .profile-update-form .form-tile .form-control:focus {
-        box-shadow: none; }
     .profile-detail-wrapper .profile-details-section .profile-update-form .form-tile textarea.form-control {
       height: 13rem; }
   .profile-detail-wrapper .profile-details-section .profile-update-form p {

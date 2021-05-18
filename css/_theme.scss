@@ -1,5 +1,19 @@
 /*header css start*/
 
+
+// form
+
+.form-control {
+  min-height: 4.8rem;
+  font-size: 1.5rem;
+  border: 0.2rem solid #009aff;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+
 header {
   width: 100%;
   z-index: 9;
@@ -938,12 +952,12 @@ header {
 
 .featured-tile {
   margin: 0 0.5rem;
-  margin-top: 2rem;
+  //margin-top: 2rem;
   height: Calc(100% - #{$featuredh});
 
   &.subscribed {
 
-    .featured-img-slider {
+    .featured-img-slider, > a {
 
       &:before {
         content: 'sponsorizzata';
@@ -1199,7 +1213,7 @@ header {
 
   @include media1920 {
     .featured-tile {
-      margin-top: 2rem;
+      //margin-top: 2rem;
     }
   }
 
@@ -1244,7 +1258,7 @@ header {
       --bs-gutter-x: 0;
 
       .featured-tile {
-        margin-top: 2rem;
+        //margin-top: 2rem;
 
         .featured-content {
           padding: 2rem;
@@ -1283,7 +1297,7 @@ header {
   .numbers-tile {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: center; 
     margin-top: 7rem;
 
     .number-img {
@@ -5160,16 +5174,6 @@ footer {
           display: flex;
           align-items: center;
           transition: all 0.3s ease-in;
-        }
-
-        .form-control {
-          min-height: 4.8rem;
-          font-size: 1.5rem;
-          border: 0.2rem solid #009aff;
-
-          &:focus {
-            box-shadow: none;
-          }
         }
 
         textarea {
