@@ -2116,7 +2116,7 @@ footer {
 .search-page .featured-wrapper {
   background-image: url("../images/search-page-bg.png");
   padding: 0 0 10rem;
-  margin-top: 24rem; }
+  margin-top: 22.8rem; }
 .search-page footer {
   background-color: #b7c544; }
 @media (max-width: 991.98px) {
@@ -2308,7 +2308,8 @@ footer {
     .filter-options-wrapper {
       position: fixed;
       top: 0;
-      padding-top: 10rem; }
+      padding-top: 10rem;
+      height: 100vh; }
       .filter-options-wrapper .gx-5 {
         --bs-gutter-x: 1rem; }
       .filter-options-wrapper .more-filter-btn-overly {
@@ -2338,16 +2339,13 @@ footer {
   @media (max-width: 575.98px) {
     .filter-options-wrapper .gx-5 {
       --bs-gutter-x: 3rem; }
-    .filter-options-wrapper .filter-tiles {
-      overflow-y: auto;
-      max-height: 66vh; }
-      .filter-options-wrapper .filter-tiles .row {
-        margin-left: 0;
-        margin-right: 0; }
-      .filter-options-wrapper .filter-tiles .filter-tile {
-        padding: 1rem 0; }
-      .filter-options-wrapper .filter-tiles .submit-btns .btn-outline-primary {
-        padding: 1rem 5rem; } }
+    .filter-options-wrapper .filter-tiles .row {
+      margin-left: 0;
+      margin-right: 0; }
+    .filter-options-wrapper .filter-tiles .filter-tile {
+      padding: 1rem 0; }
+    .filter-options-wrapper .filter-tiles .submit-btns .btn-outline-primary {
+      padding: 1rem 5rem; } }
   @media (max-width: 415px) {
     .filter-options-wrapper .filter-tiles .submit-btns {
       flex-wrap: wrap; }
@@ -2455,7 +2453,7 @@ footer {
       .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content {
         width: 90%;
         left: 50%;
-        transform: translate(-50%, -15%); }
+        transform: translate(-50%, 0); }
         .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content .magazine-desc {
           margin-top: 1.5rem; } }
   @media (max-width: 425.98px) {
@@ -3403,7 +3401,7 @@ footer {
       line-height: 1.1; }
   .detail-wrapper .booking-form-wrapper {
     padding: 1.5rem 3rem;
-    width: 92%;
+    width: 100%;
     margin-left: auto;
     position: sticky;
     top: 10rem;
@@ -4108,10 +4106,9 @@ footer {
 
 /*contact page css end*/
 .acf-input input[type="checkbox"] {
-  margin-top: 3re;
   margin-right: 1rem;
-  width: 2rem;
-  height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
   position: relative;
   border: 0.2rem solid #009aff;
   background-color: #fff;

@@ -2121,7 +2121,7 @@ footer {
   .featured-wrapper {
     background-image: url("../images/search-page-bg.png");
     padding: 0 0 10rem;
-    margin-top: 24rem;
+    margin-top: 22.8rem;
   }
 
   footer {
@@ -2414,13 +2414,13 @@ footer {
   // @include customminwh(1440, 680) {
   //   .filter-tiles {
   //     overflow-y: auto;
-  //     max-height: 40vh;
+  //     max-height: 40vh
   //   }
   // }
   //
   // @include customminwh(1399, 680) {
   //   .filter-tiles {
-  //     overflow-y: auto; 
+  //     overflow-y: auto;
   //     max-height: 35vh;
   //   }
   // }
@@ -2449,6 +2449,7 @@ footer {
     position: fixed;
     top: 0;
     padding-top: 10rem;
+    height: 100vh;
 
     .gx-5 {
       --bs-gutter-x: 1rem;
@@ -2510,8 +2511,8 @@ footer {
     }
 
     .filter-tiles {
-      overflow-y: auto;
-      max-height: 66vh;
+      // overflow-y: auto;
+      // max-height: 66vh;
 
       .row {
         margin-left: 0;
@@ -2739,7 +2740,7 @@ footer {
         .magazine-main-content {
           width: 90%;
           left: 50%;
-          transform: translate(-50%, -15%);
+          transform: translate(-50%, 0);
 
           .magazine-desc {
             margin-top: 1.5rem;
@@ -4291,7 +4292,7 @@ footer {
 
   .booking-form-wrapper {
     padding: 1.5rem 3rem;
-    width: 92%;
+    width: 100%;
     margin-left: auto;
     position: sticky;
     top: 10rem;
@@ -5483,10 +5484,9 @@ footer {
 
 .acf-input {
   input[type="checkbox"] {
-    margin-top: 3re;
     margin-right: 1rem;
-    width: 2rem;
-    height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
     position: relative;
     border: 0.2rem solid #009aff;
     background-color: #fff;
