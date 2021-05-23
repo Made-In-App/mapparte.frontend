@@ -2922,8 +2922,8 @@ footer {
     object-fit: cover;
   }
   .magazine-detail-ttl {
-    font-size: 4rem;
-    line-height: 1.2;
+    // font-size: 4rem;
+    // line-height: 1.2;
     margin-bottom: 7rem;
   }
 
@@ -3004,9 +3004,13 @@ footer {
   }
 
   .magazine-detail-desc {
+
+    *:not(h1,h2,h3,h4,h5,h6) {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+    }
+
     p {
-      font-size: 1.6rem;
-      line-height: 1.5;
 
       &:first-child {
         margin-top: 3rem;
@@ -3016,8 +3020,6 @@ footer {
     b,
     strong {
       font-weight: bold;
-      font-size: 1.6rem;
-      line-height: 1.5;
       margin: 1rem 0;
     }
 
@@ -3027,21 +3029,18 @@ footer {
 
       li {
         list-style-type: disc;
-        font-size: 1.8rem;
-        line-height: 1.5;
       }
     }
 
-    a {
-      font-size: 1.6rem;
-      line-height: 1.5;
+    a {text-decoration: underline;
       color: #19232c;
       font-weight: 500;
+
     }
 
     blockquote {
-      font-size: 2rem;
-      line-height: 1.5;
+      font-size: 3rem;
+      line-height: 5;
       color: #19232c;
       font-weight: 500;
       padding-left: 2rem;
@@ -3075,7 +3074,7 @@ footer {
 
   @include media991 {
     .magazine-detail-ttl {
-      font-size: 3.5rem;
+      //font-size: 3.5rem;
     }
   }
 
@@ -3148,7 +3147,7 @@ footer {
     }
 
     .magazine-detail-ttl {
-      font-size: 2.4rem;
+      //font-size: 2.4rem;
     }
   }
 }
@@ -4134,16 +4133,16 @@ footer {
   }
 
   .space-desc {
-    line-height: 1.2;
-    font-size: 1.5rem;
+    // line-height: 1.2;
+    // font-size: 1.5rem;
   }
 
   .space-rule-wrapper {
     margin-bottom: 5rem;
 
     p {
-      line-height: 1.2;
-      font-size: 1.3rem;
+      // line-height: 1.2;
+      // font-size: 1.3rem;
     }
 
     h4 {
@@ -4284,8 +4283,8 @@ footer {
       }
 
       p {
-        font-size: 1.5rem;
-        line-height: 1.1;
+        // font-size: 1.5rem;
+        // line-height: 1.1;
       }
     }
   }
@@ -4354,11 +4353,22 @@ footer {
         .time-slot-tile {
           width: 33.33333%;
           transition: all ease-in 0.3s;
+
+          @include media767 {
+            width: 100%;
+          }
+
+          // &:nth-child(odd) {
+          //
+          //   @include media767 {
+          //     width: 100%;
+          //   }
+          // }
         }
 
         &.active {
           .time-slot-tile {
-            width: 50%;
+            //width: 50%;
             transition: all ease-in 0.3s;
 
             &.d-none {
@@ -4489,9 +4499,23 @@ footer {
   .mbl-action-btn {
     position: fixed;
     bottom: 0;
+    padding: 5px 0;
     left: 0;
     width: 100%;
     z-index: 9;
+
+    > button {
+      width: calc(50% - 7.5px);
+      box-shadow: none;
+
+      &:first-child {
+        margin: 0 2.5px 0 5px;
+      }
+
+      &:last-child {
+        margin: 0 5px 0 2.5px;
+      }
+    }
 
     .btn {
       font-size: 1.5rem;
@@ -5045,9 +5069,11 @@ footer {
   .profile-details-section {
     position: relative;
     padding: 0 2rem;
+    background: #f3f3f3;
+    border-radius: 100%;
 
     .header-top {
-      position: sticky;
+      //position: sticky;
       width: 100%;
       top: 0;
       z-index: 9;
@@ -5071,6 +5097,8 @@ footer {
     .profile-img {
       display: inline-block;
       position: relative;
+      background: #f3f3f3;
+      border-radius: 100%;
 
       .user-img {
         width: 19rem;
