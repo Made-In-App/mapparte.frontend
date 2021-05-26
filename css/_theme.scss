@@ -2631,25 +2631,6 @@ footer {
           margin-top: 4rem;
           font-weight: 500;
         }
-
-        .name {
-          position: absolute;
-          bottom: 1.3rem;
-
-          @include media767 {
-            position: static;
-          }
-
-          img {
-            max-width: 5rem;
-            display: inline-block;
-            margin-right: 1rem;
-          }
-
-          span {
-            font-weight: 700;
-          }
-        }
       }
     }
 
@@ -2759,6 +2740,24 @@ footer {
 /*magazine section css end*/
 
 /*magazine list section css start*/
+.name {
+  margin: 10px 0 0;
+  
+  @include media767 {
+    position: static;
+  }
+
+  img {
+    max-width: 5rem;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  span {
+    font-weight: 700;
+  }
+}
+
 
 .magazine-content {
   margin-top: 1rem;
