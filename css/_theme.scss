@@ -2742,7 +2742,7 @@ footer {
 /*magazine list section css start*/
 .name {
   margin: 10px 0 0;
-  
+
   @include media767 {
     position: static;
   }
@@ -4353,6 +4353,13 @@ footer {
           width: 33.33333%;
           transition: all ease-in 0.3s;
 
+          input {
+
+            &::-webkit-datetime-edit {
+              overflow: visible;
+            }
+          }
+
           @include media767 {
             width: 100%;
           }
@@ -4446,11 +4453,18 @@ footer {
 
       .action-btn {
         .btn {
+          cursor: pointer;
           width: 100%;
           font-size: 1.8rem;
           line-height: 1;
           text-transform: uppercase;
           border: 0.4rem solid #cccccc50;
+
+          &[disabled] {
+              cursor: auto;
+              pointer-events: none;
+              opacity: 0.1;
+          }
         }
 
         .btn-secondary {
