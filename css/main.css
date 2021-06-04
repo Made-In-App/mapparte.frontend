@@ -874,6 +874,9 @@ button:focus {
   .form-control:focus {
     box-shadow: none; }
 
+.form-select {
+  min-height: 42px; }
+
 header {
   width: 100%;
   z-index: 9;
