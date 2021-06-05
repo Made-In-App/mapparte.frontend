@@ -7,14 +7,11 @@
   //min-height: 4.8rem;
   font-size: 1.5rem;
   border: 0.2rem solid #009aff;
+  min-height: 42px;
 
   &:focus {
     box-shadow: none;
   }
-}
-
-.form-select {
-  min-height: 42px;
 }
 
 
@@ -955,9 +952,9 @@ header {
 /*featured section css start*/
 
 .featured-tile {
-  margin: 0 0.5rem;
+  margin: 0 0.5rem 3rem;
   //margin-top: 2rem;
-  height: Calc(100% - #{$featuredh});
+  //height: Calc(100% - #{$featuredh});
 
   &.subscribed {
 
@@ -1019,16 +1016,17 @@ header {
     position: relative;
 
     .featured-ttl {
-      font-weight: 400;
+      font-weight: 700;
       font-size: 2rem;
-      line-height: 1;
+      line-height: 1.2em;
       width: 85%;
     }
 
     .featured-subttl {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
+      font-weight: 700;
       display: inline-block;
-      line-height: 1;
+      line-height: 1.2em;
       margin-top: 0.5rem;
       width: 85%;
     }
@@ -1121,7 +1119,8 @@ header {
     }
 
     .featured-desc {
-      line-height: 1.3;
+      font-size: 1.6rem;
+      line-height: 1.2;
       margin: 1.5rem 0 1.5rem;
 
       b {
@@ -1177,7 +1176,6 @@ header {
     position: relative;
 
     #default {
-      margin-top: 2rem;
       position: sticky !important;
       top: 27rem;
       width: 100%;
@@ -2038,8 +2036,8 @@ footer {
       .btn {
         background-color: #ffffff;
         display: inline-block;
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 42px;
+        width: 42px;
         padding: 0.5rem;
         border-radius: 0;
 
