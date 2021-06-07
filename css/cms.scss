@@ -1089,7 +1089,7 @@ td.acf-row-handle.remove {
 
 div#ui-datepicker-div {
     position: fixed;
-    left: 50%;
+    left: 50% !important;
     top: 50%;
     transform: translate(-50%,-50%);
     padding: 3rem;
@@ -1128,7 +1128,7 @@ dd.ui_tpicker_hour {}
 }
 
 .ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_minute:before, .ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_second:before {
-    content: none;
+    content: none !important;
 }
 
 button.ui-datepicker-close.ui-state-default.ui-priority-primary.ui-corner-all {
