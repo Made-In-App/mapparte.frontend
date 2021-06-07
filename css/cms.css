@@ -1238,7 +1238,7 @@ a.drawer-btn {
       min-height: 100vh;
       position: fixed;
       right: 0; }
-      @media (max-width: 991.98px) {
+      @media (max-width: 767.98px) {
         .my-space-page .my-space-wrapper .my-space-content-wrapper {
           display: none; } }
     .my-space-page .my-space-wrapper .k-state-selecting {
@@ -1437,5 +1437,89 @@ a.drawer-btn {
           padding-right: calc(var(--bs-gutter-x) / 2); } }
 
 /*step form css end*/
+.acf-fields > .acf-tab-wrap:first-child .acf-tab-group {
+  flex-wrap: nowrap;
+  display: flex; }
+
+.acf-fields > .acf-tab-wrap {
+  overflow-x: auto; }
+
+.acf-fields > .acf-tab-wrap .acf-tab-group li a {
+  background: #0e6efc;
+  /* border: none; */ }
+
+.acf-fields > .acf-tab-wrap .acf-tab-group li a:hover {
+  background: #0e6efc; }
+
+.acf-fields > .acf-tab-wrap .acf-tab-group li.active a {
+  background: #ffffff; }
+
+a.acf-button.button.button-primary {
+  background-color: #0e6efc;
+  padding: 12px;
+  border-radius: 4px;
+  justify-content: center;
+  margin: 12px; }
+
+.acf-repeater .acf-row-handle .acf-icon {
+  margin: 3px 6px; }
+
+a.acf-icon.-plus.small.acf-js-tooltip.hide-on-shift {
+  background-color: green; }
+
+a.acf-icon.-minus.small.acf-js-tooltip {
+  background-color: #f00; }
+
+td.acf-row-handle.remove {
+  padding: 0; }
+
+div#ui-datepicker-div {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+  width: 80%;
+  box-shadow: 0 4px 22px; }
+
+select.ui-timepicker-select.ui-state-default.ui-corner-all {
+  padding: 6px;
+  min-width: 92%;
+  margin: 0 auto;
+  display: block; }
+
+button.ui-datepicker-current.ui-state-default.ui-priority-secondary.ui-corner-all {
+  display: none; }
+
+dt.ui_tpicker_time_label {
+  display: none !important; }
+
+.ui-timepicker-div.ui-timepicker-oneLine > dl {
+  display: flex;
+  justify-content: space-between; }
+
+.ui-timepicker-div.ui-timepicker-oneLine > dl > dd {
+  flex: 1; }
+
+.ui-timepicker-div.ui-timepicker-oneLine > dl > dd > div {
+  display: block !important; }
+
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_minute:before, .ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_second:before {
+  content: none; }
+
+button.ui-datepicker-close.ui-state-default.ui-priority-primary.ui-corner-all {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  padding: 12px;
+  background-color: green;
+  color: #fff;
+  margin: 12px auto; }
+
+.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+  margin: 0 0 24px; }
+
+dd.ui_tpicker_second {
+  display: none !important; }
 
 /*# sourceMappingURL=cms.css.map */
