@@ -908,7 +908,11 @@ a.acf-icon.-plus.small.acf-js-tooltip.hide-on-shift {
   background-color: green; }
 
 a.acf-icon.-minus.small.acf-js-tooltip {
-  background-color: #f00; }
+  background-color: #f00;
+  display: block;
+  margin: 0;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 td.acf-row-handle.remove {
   padding: 0; }
@@ -961,6 +965,9 @@ button.ui-datepicker-close.ui-state-default.ui-priority-primary.ui-corner-all {
 
 dd.ui_tpicker_second {
   display: none !important; }
+
+.acf-tooltip.-confirm.left {
+  display: none; }
 
 .media-attachments-filter-heading {
   display: none; }
