@@ -4444,10 +4444,10 @@ footer {
       border-bottom: 1px solid #ffffff75; } }
 
 /*subscription page css end*/
-.svg-inline--fa.fa-w-18 {
+.svg-inline--fa.fa-w-18, .svg-inline--fa.fa-star-half-alt.fa-w-17 {
   width: 2em;
   height: 2em; }
-  .svg-inline--fa.fa-w-18 path {
+  .svg-inline--fa.fa-w-18 path, .svg-inline--fa.fa-star-half-alt.fa-w-17 path {
     fill: #ffc200; }
 
 /** theme */
