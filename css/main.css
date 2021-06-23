@@ -1020,6 +1020,11 @@ header {
               margin: auto; }
           header .header-wrapper .menu nav .navbar-nav .nav-item:hover a {
             transition: ease-in all 0.3s; }
+          header .header-wrapper .menu nav .navbar-nav .nav-item:hover .sub-menu {
+            position: absolute;
+            left: 0; }
+            header .header-wrapper .menu nav .navbar-nav .nav-item:hover .sub-menu a {
+              width: auto !important; }
           header .header-wrapper .menu nav .navbar-nav .nav-item:hover .dropdown-menu {
             visibility: visible;
             opacity: 1;

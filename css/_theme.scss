@@ -225,6 +225,15 @@ header {
                 transition: ease-in all 0.3s;
               }
 
+              .sub-menu {
+                position: absolute;
+                left: 0;
+
+                a {
+                  width: auto !important;
+                }
+              }
+
               .dropdown-menu {
                 visibility: visible;
                 opacity: 1;
