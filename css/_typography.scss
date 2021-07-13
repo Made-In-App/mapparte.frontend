@@ -44,3 +44,7 @@ p {
 span {
   @include defaultFontStyle($Roboto, 400, 1.5, 2.8, $black);
 }
+
+em, i {
+  font-style: italic;
+}
