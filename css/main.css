@@ -2424,9 +2424,7 @@ footer {
   @media (max-width: 1399.98px) {
     .magazine-wrapper .magazine-tiles .magazine-tile .magazine-content .magazine-desc {
       width: 100%;
-      font-size: 1.29rem; }
-    .magazine-wrapper .magazine-tiles .magazine-main-tile .magazine-main-content {
-      width: 60%; } }
+      font-size: 1.29rem; } }
   @media (max-width: 767.98px) {
     .magazine-wrapper .magazine-tiles .magazine-tile {
       margin-top: 2rem; }
@@ -4124,7 +4122,7 @@ footer {
   padding: 0 !important; }
   .acf-input input[type="checkbox"]:checked:after {
     content: "";
-    background-image: url("/wp-content/themes/mapparte/assets/images/check.png");
+    background-image: url("https://www.mapparte.com/wp-content/themes/mapparte/assets/images/check.png");
     background-position: center;
     background-size: contain;
     position: absolute;
