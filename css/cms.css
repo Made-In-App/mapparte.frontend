@@ -675,9 +675,12 @@ a.drawer-btn {
       position: relative;
       height: 100%; }
     .my-space-page .my-space-wrapper .my-space-content-wrapper {
-      min-height: 100vh;
+      height: 100vh;
       position: fixed;
-      right: 0; }
+      overflow: auto;
+      right: 0;
+      top: 0;
+      padding-bottom: 90px !important; }
       @media (max-width: 767.98px) {
         .my-space-page .my-space-wrapper .my-space-content-wrapper {
           display: none; } }
@@ -769,8 +772,6 @@ a.drawer-btn {
       padding-bottom: 3rem; }
       .my-space-page .my-space-wrapper .my-space-content-wrapper .my-space-content {
         align-items: flex-start;
-        position: sticky;
-        top: 22rem;
         z-index: 8; }
         .my-space-page .my-space-wrapper .my-space-content-wrapper .my-space-content .my-space-img {
           width: 18rem;

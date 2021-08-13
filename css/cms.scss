@@ -706,9 +706,12 @@ a.drawer-btn {
     }
 
     .my-space-content-wrapper {
-      min-height: 100vh;
+      height: 100vh;
       position: fixed;
+      overflow: auto;
       right: 0;
+      top: 0;
+      padding-bottom: 90px !important;
 
       @include media767 {
         display: none;
@@ -853,8 +856,8 @@ a.drawer-btn {
 
       .my-space-content {
         align-items: flex-start;
-        position: sticky;
-        top: 22rem;
+        // position: sticky;
+        // top: 22rem;
         z-index: 8;
 
         .my-space-img {
